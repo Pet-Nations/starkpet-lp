@@ -27,8 +27,8 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         <HeaderBar />
-        <Strategic/>
         <Intro />
+        <Strategic/>
         <FooterBar />
       </body>
     </html>

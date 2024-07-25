@@ -6,8 +6,9 @@ import productionImg from "@/app/assets/images/strategic/production/img.png";
 import productionImgActive from "@/app/assets/images/strategic/production/img-active.png";
 import deepImg from "@/app/assets/images/strategic/deep/img.png";
 import deepImgActive from "@/app/assets/images/strategic/deep/img-active.png";
-import tractionImg from "@/app/assets/images/strategic/tractions/img.svg";
-import tractionImgActive from "@/app/assets/images/strategic/tractions/img-active.svg";
+import tractionImg1 from "@/app/assets/images/strategic/tractions/img_1.png";
+import tractionImg2 from "@/app/assets/images/strategic/tractions/img_2.png";
+import tractionImg3 from "@/app/assets/images/strategic/tractions/img_3.png";
 import Image from "next/image";
 import { useState } from "react";
 
@@ -31,7 +32,8 @@ const StrategicItem: React.FC<StrategicItemProps> = ({ img, imgActive, title, te
 
     return (
         <div className="strategic-item" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-            <Image src={isHovered ? imgActive : img} alt={title} />
+
+            <Image className="single-img" src={isHovered ? imgActive : img} alt={title} />
             <div className="content">
                 <span>{title}</span>
                 <p>{text}</p>
@@ -54,12 +56,7 @@ export default function Strategic() {
             title: "Deep RnD",
             text: "The Pet Nations Lab always try to focus and follow the market to make sure RnD is foresight."
         },
-        {
-            img: tractionImg,
-            imgActive: tractionImgActive,
-            title: "Tractions blackhole",
-            text: "Bring all tractions with awareness from the power of lab productions."
-        }
+
     ];
 
     return (
@@ -81,6 +78,17 @@ export default function Strategic() {
                         text={item.text}
                     />
                 ))}
+                <div className="strategic-item" >
+                    <div className="container-img">
+                        <Image src={tractionImg1} alt={tractionImg1}/>
+                        <Image src={tractionImg2} alt={tractionImg2}/>
+                        <Image src={tractionImg3} alt={tractionImg3}/>
+                    </div>
+                    <div className="content">
+                        <span>Tractions blackhole</span>
+                        <p>Bring all tractions with awareness from the power of lab productions.</p>
+                    </div>
+                </div>
             </div>
         </div>
     );
