@@ -23,7 +23,7 @@ export default function OurProjects() {
               <path
                 d="M1 106.5V4.12839C1 1.54816 4.04137 0.171633 5.97988 1.87449L122.519 104.246C124.598 106.072 123.306 109.5 120.539 109.5H4C2.34315 109.5 1 108.157 1 106.5Z"
                 stroke="white"
-                stroke-width="0.5"
+                strokeWidth="0.5"
               />
             </svg>
             <div>Testnet</div>
@@ -113,7 +113,7 @@ export default function OurProjects() {
               <path
                 d="M1 106.5V4.12839C1 1.54816 4.04137 0.171633 5.97988 1.87449L122.519 104.246C124.598 106.072 123.306 109.5 120.539 109.5H4C2.34315 109.5 1 108.157 1 106.5Z"
                 stroke="white"
-                stroke-width="0.5"
+                strokeWidth="0.5"
               />
             </svg>
             <div>Soon</div>
