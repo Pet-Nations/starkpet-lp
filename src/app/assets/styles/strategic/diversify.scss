@@ -1,6 +1,6 @@
 .diversify {
   @apply flex flex-col justify-center items-center gap-4 rounded-[24px] w-[421px];
-  border: 1.5px solid var(--stroke-15-card, rgba(255, 255, 255, 0.40));
+  border: none;
   background: rgba(40, 40, 40, 0.70);
   box-shadow: 2px 4px 16px 0px rgba(248, 248, 248, 0.06) inset;
   backdrop-filter: blur(50px);
