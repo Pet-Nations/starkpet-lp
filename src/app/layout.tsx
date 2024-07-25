@@ -7,6 +7,7 @@ import store from "@/redux/store";
 import HeaderBar from "@/app/components/HeaderBar";
 import Strategic from "@/app/components/Strategic";
 import Intro from "@/app/components/Intro";
+import OurProjects from "@/app/components/OurProjects";
 import FooterBar from "@/app/components/FooterBar";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -29,6 +30,7 @@ export default function RootLayout({
         <HeaderBar />
         <Intro />
         <Strategic/>
+        <OurProjects />
         <FooterBar />
       </body>
     </html>
