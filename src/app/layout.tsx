@@ -1,10 +1,11 @@
 "use client";
-import { Inter } from "next/font/google";
+import {Inter} from "next/font/google";
 import "./globals.css";
 import React from "react";
 import store from "@/redux/store";
 
 import HeaderBar from "@/app/components/HeaderBar";
+import Strategic from "@/app/components/Strategic";
 import Intro from "@/app/components/Intro";
 import OurProjects from "@/app/components/OurProjects";
 import FooterBar from "@/app/components/FooterBar";
@@ -20,20 +21,15 @@ export default function RootLayout({
       <head>
         <title>Inferix Node Sale</title>
         <meta name="description" content="Inferix Node Sale" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          cross-origin="true"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
-          rel="stylesheet"
-        />
+          <link rel="preconnect" href="https://fonts.googleapis.com"/>
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin={true}/>
+          <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet"/>
+          <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet"/>
       </head>
       <body className={inter.className}>
         <HeaderBar />
         <Intro />
+        <Strategic/>
         <OurProjects />
         <FooterBar />
       </body>
