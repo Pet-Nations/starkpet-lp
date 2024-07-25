@@ -43,3 +43,8 @@ body {
   font-family: Poppins;
   src: url("/Poppins-Regular.ttf");
 }
+
+@font-face {
+  font-family: Anton;
+  src: url("/Anton-Regular.ttf");
+}
