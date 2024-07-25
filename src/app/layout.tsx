@@ -1,14 +1,10 @@
 "use client";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import HeaderBar from "@/app/components/HeaderBar";
-import Content from "@/app/components/Content";
-import FooterBar from "@/app/components/FooterBar";
-import { Provider } from "react-redux";
 import React from "react";
 import store from "@/redux/store";
 
-import A from "@/app/components/Stark.tsx";
+import HeaderBar from "@/app/components/HeaderBar";
 
 const inter = Inter({ subsets: ["latin"] });
 export default function RootLayout({
@@ -33,7 +29,7 @@ export default function RootLayout({
         />
       </head>
       <body className={inter.className}>
-        <A />
+        <HeaderBar />
       </body>
     </html>
   );
