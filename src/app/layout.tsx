@@ -5,6 +5,7 @@ import React from "react";
 import store from "@/redux/store";
 
 import HeaderBar from "@/app/components/HeaderBar";
+import FooterBar from "@/app/components/FooterBar";
 
 const inter = Inter({ subsets: ["latin"] });
 export default function RootLayout({
@@ -30,6 +31,7 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         <HeaderBar />
+        <FooterBar />
       </body>
     </html>
   );

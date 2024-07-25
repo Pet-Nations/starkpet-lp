@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 import "@/app/assets/styles/header-bar.scss";
-import logo from "@/app/assets/images/header/logo.png";
+import logo from "@/app/assets/images/header/logo.svg";
 import d from "@/app/assets/images/header/discord.svg";
 import d_light from "@/app/assets/images/header/discord-light.svg";
 import y from "@/app/assets/images/header/youtube.svg";
