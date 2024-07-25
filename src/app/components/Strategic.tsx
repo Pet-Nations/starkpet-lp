@@ -80,9 +80,9 @@ export default function Strategic() {
                 ))}
                 <div className="strategic-item" >
                     <div className="container-img">
-                        <Image src={tractionImg1} alt={tractionImg1}/>
-                        <Image src={tractionImg2} alt={tractionImg2}/>
-                        <Image src={tractionImg3} alt={tractionImg3}/>
+                        <Image src={tractionImg1} alt="tractionImg1"/>
+                        <Image src={tractionImg2} alt="tractionImg2"/>
+                        <Image src={tractionImg3} alt="tractionImg3"/>
                     </div>
                     <div className="content">
                         <span>Tractions blackhole</span>
