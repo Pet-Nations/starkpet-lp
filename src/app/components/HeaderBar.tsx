@@ -1,15 +1,15 @@
 import Image from "next/image";
 
 import "@/app/assets/styles/header-bar.scss";
-import logo from "@/app/assets/images/stark/logo.png";
-import d from "@/app/assets/images/stark/discord.svg";
-import d_light from "@/app/assets/images/stark/discord-light.svg";
-import y from "@/app/assets/images/stark/youtube.svg";
-import y_light from "@/app/assets/images/stark/youtube-light.svg";
-import x from "@/app/assets/images/stark/twitter.svg";
-import x_light from "@/app/assets/images/stark/twitter-light.svg";
-import t from "@/app/assets/images/stark/telegram.svg";
-import t_light from "@/app/assets/images/stark/telegram-light.svg";
+import logo from "@/app/assets/images/header/logo.png";
+import d from "@/app/assets/images/header/discord.svg";
+import d_light from "@/app/assets/images/header/discord-light.svg";
+import y from "@/app/assets/images/header/youtube.svg";
+import y_light from "@/app/assets/images/header/youtube-light.svg";
+import x from "@/app/assets/images/header/twitter.svg";
+import x_light from "@/app/assets/images/header/twitter-light.svg";
+import t from "@/app/assets/images/header/telegram.svg";
+import t_light from "@/app/assets/images/header/telegram-light.svg";
 
 export default function HeaderBar() {
   return (
