@@ -2,9 +2,11 @@
 import {Inter} from "next/font/google";
 import "./globals.css";
 import React from "react";
+import store from "@/redux/store";
 
 import HeaderBar from "@/app/components/HeaderBar";
 import Strategic from "@/app/components/Strategic";
+import Intro from "@/app/components/Intro";
 import FooterBar from "@/app/components/FooterBar";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -26,6 +28,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <HeaderBar />
         <Strategic/>
+        <Intro />
         <FooterBar />
       </body>
     </html>
