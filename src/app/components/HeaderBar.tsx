@@ -11,15 +11,25 @@ import x_light from "@/app/assets/images/header/twitter-light.svg";
 import t from "@/app/assets/images/header/telegram.svg";
 import t_light from "@/app/assets/images/header/telegram-light.svg";
 
-export default function HeaderBar() {
+export default function HeaderBar({ onClickNav }) {
+  function clickNav(value: string) {
+    onClickNav(value);
+  }
+
   return (
     <div className="header-bar">
-      <Image src={logo} width={55} height={40} alt="logo" />
+      <Image
+        src={logo}
+        width={55}
+        height={40}
+        alt="logo"
+        onClick={() => clickNav("home")}
+      />
       <div className="nav">
-        <div>[01] Home</div>
-        <div>[02] About_Us</div>
-        <div>[03] Our_Model</div>
-        <div>[04] Our_Projects</div>
+        <div onClick={() => clickNav("home")}>[01] Home</div>
+        <div onClick={() => clickNav("about-us")}>[02] About_Us</div>
+        <div onClick={() => clickNav("models")}>[03] Our_Model</div>
+        <div onClick={() => clickNav("projects")}>[04] Our_Projects</div>
       </div>
       <div style={{ flex: 1 }}></div>
       <div className="media">

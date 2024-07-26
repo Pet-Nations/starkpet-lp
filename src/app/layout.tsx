@@ -1,8 +1,11 @@
 "use client";
-import {Inter} from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 import store from "@/redux/store";
+import Image from "next/image";
+
+import background from "@/app/assets/images/background.png";
 
 import HeaderBar from "@/app/components/HeaderBar";
 import Strategic from "@/app/components/Strategic";
@@ -16,21 +19,43 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const [strategic, setStrategic] = useState("");
+  const [projects, setProjects] = useState(false);
+
+  function scrollTo(nav: string) {
+    if (nav == "home") window.scrollTo({ top: 0, behavior: "smooth" });
+    if (nav == "projects") setProjects(true);
+    else setProjects(false);
+    if (nav == "models" || nav == "about-us") setStrategic(nav);
+    else setStrategic("");
+  }
+
   return (
     <html lang="en">
       <head>
         <title>Stark Net</title>
         <meta name="description" content="Stark Net LandingPage" />
-          <link rel="preconnect" href="https://fonts.googleapis.com"/>
-          <link rel="preconnect" href="https://fonts.gstatic.com" cross-origin="true"/>
-          <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet"/>
-          <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          cross-origin="true"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+          rel="stylesheet"
+        />
       </head>
-      <body className={inter.className}>
-        <HeaderBar />
+      <body className={inter.className + " container-stark"}>
+        <div className="background"></div>
+        <HeaderBar onClickNav={scrollTo} />
         <Intro />
-        <Strategic/>
-        <OurProjects />
+        <Strategic scroll={strategic} />
+        <OurProjects scroll={projects} />
         <FooterBar />
       </body>
     </html>

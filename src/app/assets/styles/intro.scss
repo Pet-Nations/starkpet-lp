@@ -19,7 +19,11 @@
 
     > div:nth-child(2) {
       color: #242424;
-      line-height: 70%;
+      line-height: 40%;
+    }
+    > div:nth-child(3) {
+      color: #242424;
+      opacity: 0.3;
     }
   }
 
