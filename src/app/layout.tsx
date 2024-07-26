@@ -49,6 +49,18 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
           rel="stylesheet"
         />
+
+        <meta property="og:url" content="" />
+        <meta property="og:title" content="Pet Labs by Pet Nations" />
+        <meta name="title" content="Pet Labs by Pet Nations" />
+        <meta
+          property="og:description"
+          content="Lab, build all productions from Pet Nations. Ensure the stability of Pet Nations ecosystem"
+        />
+        <meta
+          name="description"
+          content="Lab, build all productions from Pet Nations. Ensure the stability of Pet Nations ecosystem"
+        />
       </head>
       <body className={inter.className + " container-stark"}>
         <div className="background"></div>
