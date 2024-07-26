@@ -26,10 +26,10 @@ export default function HeaderBar({ onClickNav }) {
         onClick={() => clickNav("home")}
       />
       <div className="nav">
-        <div onClick={() => clickNav("home")}>[01] Home</div>
-        <div onClick={() => clickNav("about-us")}>[02] About_Us</div>
-        <div onClick={() => clickNav("models")}>[03] Our_Model</div>
-        <div onClick={() => clickNav("projects")}>[04] Our_Projects</div>
+        <div onClick={() => clickNav("home")}>[ 01 ] Home</div>
+        <div onClick={() => clickNav("about-us")}>[ 02 ] About_Us</div>
+        <div onClick={() => clickNav("models")}>[ 03 ] Our_Model</div>
+        <div onClick={() => clickNav("projects")}>[ 04 ] Our_Projects</div>
       </div>
       <div style={{ flex: 1 }}></div>
       <div className="media">
