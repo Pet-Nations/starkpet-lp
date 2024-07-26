@@ -25,10 +25,11 @@
       }
       .content {
         @apply flex flex-col gap-1 px-4 text-[24px] font-normal leading-6 h-full justify-end;
-        color: rgba(248, 248, 248, 0.7);
+        color: rgba(248, 248, 248, 0.95);
         font-family: Play, sans-serif;
         p {
           @apply text-[16px];
+          color: rgba(248, 248, 248, 0.7);
         }
       }
 

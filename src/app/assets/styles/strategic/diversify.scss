@@ -19,7 +19,7 @@
     @apply flex flex-col gap-6 w-full h-full items-start px-4 justify-end z-40;
     .diversify-description {
       @apply flex flex-col gap-1;
-      color: rgba(248, 248, 248, 0.7);
+      color: rgba(248, 248, 248, 0.95);
       font-family: Play, sans-serif;
       font-size: 24px;
       font-style: normal;
@@ -27,6 +27,7 @@
       line-height: 24px;
       p {
         @apply text-[16px];
+        color: rgba(248, 248, 248, 0.7);
       }
     }
     .diversify-follow {
