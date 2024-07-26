@@ -27,12 +27,22 @@
       border-radius: 56px;
       border: 0.5px solid #FFF;
       p {
-        color: #FFF;
-        font-family: "Plus Jakarta Sans";
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 36px; /* 225% */
+        @apply text-white text-[16px] font-[500] leading-9;
+        font-family: "Plus Jakarta Sans", sans-serif;
+
+      }
+
+      &:hover {
+        @apply bg-white flex-row-reverse;
+        svg {
+          path {
+            fill: black;
+          }
+        }
+
+        p {
+          @apply text-black;
+        }
       }
     }
   }

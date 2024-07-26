@@ -8,31 +8,30 @@
   .system-content {
     @apply flex flex-col w-full items-center justify-center gap-6;
     .system-description {
-      color: var(--Text-Text-Primary, rgba(248, 248, 248, 0.95));
-      text-align: center;
-      font-family: Play;
-      font-size: 24px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: 24px; /* 100% */
+      @apply text-center text-[24px] font-normal leading-6;
+      color:  rgba(248, 248, 248, 0.95);
+      font-family: Play, sans-serif;
       p {
         @apply text-[16px];
       }
     }
     .system-architect {
-      display: flex;
-      padding: 6px 24px;
-      justify-content: center;
-      align-items: center;
-      gap: 8px;
-      border-radius: 56px;
+      @apply flex py-1.5 px-6 justify-center items-center gap-2 rounded-[56px] text-white font-[500] leading-9;
       border: 0.5px solid #FFF;
-      color: #FFF;
-      font-family: "Plus Jakarta Sans";
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 36px; /* 225% */
+      font-family: "Plus Jakarta Sans", sans-serif;
+
+      &:hover {
+        @apply bg-white flex-row-reverse;
+        svg {
+          path {
+            fill: black;
+          }
+        }
+
+        p {
+          @apply text-black;
+        }
+      }
     }
   }
   img {
