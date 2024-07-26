@@ -19,7 +19,7 @@
     @apply flex flex-col gap-6 w-full h-full items-start px-4 justify-end z-40;
     .diversify-description {
       @apply flex flex-col gap-1;
-      color: rgba(248, 248, 248, 0.95);
+      color: rgba(248, 248, 248, 0.7);
       font-family: Play, sans-serif;
       font-size: 24px;
       font-style: normal;
@@ -32,13 +32,13 @@
     .diversify-follow {
       @apply flex px-6 py-[6px] justify-center items-center gap-2 cursor-pointer;
       border-radius: 56px;
-      border: 0.5px solid #FFF;
+      border: 0.5px solid rgba(248, 248, 248, 0.9);
 
       p, svg {
         transition: transform 0.5s ease;
       }
       p {
-        color: #FFF;
+        color: rgba(248, 248, 248, 0.9);
         font-family: "Plus Jakarta Sans";
         font-size: 16px;
         font-style: normal;
