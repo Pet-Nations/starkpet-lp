@@ -11,7 +11,7 @@ import x_light from "@/app/assets/images/header/twitter-light.svg";
 import t from "@/app/assets/images/header/telegram.svg";
 import t_light from "@/app/assets/images/header/telegram-light.svg";
 
-export default function HeaderBar({ onClickNav }) {
+export default function HeaderBar({ onClickNav }: any) {
   function clickNav(value: string) {
     onClickNav(value);
   }
@@ -33,7 +33,7 @@ export default function HeaderBar({ onClickNav }) {
       </div>
       <div style={{ flex: 1 }}></div>
       <div className="media">
-        <div>
+        <div onClick={() => window.open("https://discord.com/invite/8RnCua96")}>
           <Image src={d} width={40} height={40} alt="discord" />
           <Image src={d_light} width={40} height={40} alt="discord" />
         </div>
@@ -41,11 +41,17 @@ export default function HeaderBar({ onClickNav }) {
           <Image src={t} width={40} height={40} alt="telegram" />
           <Image src={t_light} width={40} height={40} alt="telegram" />
         </div>
-        <div>
+        <div
+          onClick={() =>
+            window.open(
+              "https://www.youtube.com/channel/UCzYllb_kpUHdzuDKuz1Lylw"
+            )
+          }
+        >
           <Image src={y} width={40} height={40} alt="youtube" />
           <Image src={y_light} width={40} height={40} alt="youtube" />
         </div>
-        <div>
+        <div onClick={() => window.open("https://x.com/pet_nations")}>
           <Image src={x} width={40} height={40} alt="twitter" />
           <Image src={x_light} width={40} height={40} alt="twitter" />
         </div>
