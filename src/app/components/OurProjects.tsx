@@ -1,3 +1,4 @@
+import { useRef, useState, useEffect } from "react";
 import Image from "next/image";
 import "@/app/assets/styles/our-projects.scss";
 
@@ -6,9 +7,21 @@ import background from "@/app/assets/images/our-projects/starship-background.png
 import starknet from "@/app/assets/images/our-projects/starknet.svg";
 import social_network from "@/app/assets/images/our-projects/social-network.png";
 
-export default function OurProjects() {
+export default function OurProjects({ scroll }) {
+  const projects = useRef(null);
+  useEffect(() => {
+    if (scroll)
+      window.scrollTo({
+        top:
+          projects.current.getBoundingClientRect().top +
+          window.pageYOffset -
+          60,
+        behavior: "smooth",
+      });
+  }, [scroll]);
+
   return (
-    <div className="our-projects">
+    <div ref={projects} className="our-projects">
       <div>Our projects</div>
       <div className="content">
         <div>

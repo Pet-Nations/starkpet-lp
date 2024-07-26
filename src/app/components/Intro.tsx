@@ -9,6 +9,7 @@ export default function Intro() {
       <div>
         <div>Pet nations labs</div>
         <div>Pet nations labs</div>
+        <div>Pet nations labs</div>
       </div>
       <Image src={intro} width={709} height={655} alt="intro" />
     </div>
