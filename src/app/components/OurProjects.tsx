@@ -7,18 +7,22 @@ import background from "@/app/assets/images/our-projects/starship-background.png
 import starknet from "@/app/assets/images/our-projects/starknet.svg";
 import social_network from "@/app/assets/images/our-projects/social-network.png";
 
-export default function OurProjects({ scroll }) {
+export default function OurProjects({ scroll }: any) {
   const projects = useRef(null);
   useEffect(() => {
-    if (scroll)
-      window.scrollTo({
-        top:
-          projects.current.getBoundingClientRect().top +
-          window.pageYOffset -
-          60,
-        behavior: "smooth",
-      });
+    onScroll();
   }, [scroll]);
+
+  function onScroll() {
+    if (!scroll || !projects || !projects.current) return;
+
+    let ele = projects.current as HTMLElement;
+
+    window.scrollTo({
+      top: ele.getBoundingClientRect().top + window.pageYOffset - 60,
+      behavior: "smooth",
+    });
+  }
 
   return (
     <div ref={projects} className="our-projects">
