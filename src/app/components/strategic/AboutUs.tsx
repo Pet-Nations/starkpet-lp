@@ -2,20 +2,12 @@ import "@/app/assets/styles/strategic/about-us.scss";
 import aboutUsImg from "@/app/assets/images/strategic/about-us/img.png";
 import aboutUsImgActive from "@/app/assets/images/strategic/about-us/img-active.png";
 import Image from "next/image";
-import {useState} from "react";
+
 export default function AboutUs() {
-    const [isHovered, setIsHovered] = useState(false);
-
-    const handleMouseEnter = () => {
-        setIsHovered(true);
-    };
-
-    const handleMouseLeave = () => {
-        setIsHovered(false);
-    };
     return (
-        <div className="about-us" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-            <Image src={isHovered ? aboutUsImgActive : aboutUsImg} alt="about-us-img" />
+        <div className="about-us">
+            <Image className="about-us-img" src={aboutUsImg} alt="about-us-img"/>
+            <Image className="about-us-img-active" src={aboutUsImgActive} alt="about-us-img-active"/>
             <div className="about-content">
                 <div className="about-description">
                     <span>About us</span>

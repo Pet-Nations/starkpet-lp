@@ -2,20 +2,11 @@ import "@/app/assets/styles/strategic/diversify.scss";
 import diversifyUsImg from "@/app/assets/images/strategic/diversify/img.png";
 import diversifyUsImgActive from "@/app/assets/images/strategic/diversify/img-active.png";
 import Image from "next/image";
-import {useState} from "react";
 export default function Diversify() {
-    const [isHovered, setIsHovered] = useState(false);
-
-    const handleMouseEnter = () => {
-        setIsHovered(true);
-    };
-
-    const handleMouseLeave = () => {
-        setIsHovered(false);
-    };
     return (
-        <div className="diversify" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-            <Image src={isHovered ? diversifyUsImgActive : diversifyUsImg} alt="diversify-us-img" />
+        <div className="diversify">
+            <Image className="diversify-img" src={diversifyUsImg} alt="diversify-img" />
+            <Image className="diversify-img-active" src={diversifyUsImgActive} alt="diversify-img-active" />
             <div className="diversify-content">
                 <div className="diversify-description">
                     <span>Diversify Models</span>

@@ -2,19 +2,10 @@ import "@/app/assets/styles/strategic/system.scss";
 import systemImg from "@/app/assets/images/strategic/system/img.png";
 import systemImgActive from "@/app/assets/images/strategic/system/img-active.png";
 import Image from "next/image";
-import {useState} from "react";
 export default function System() {
-    const [isHovered, setIsHovered] = useState(false);
 
-    const handleMouseEnter = () => {
-        setIsHovered(true);
-    };
-
-    const handleMouseLeave = () => {
-        setIsHovered(false);
-    };
     return (
-        <div className="system" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+        <div className="system">
             <div className="system-content">
                 <div className="system-description">
                     <span>Focus to maximize the contribution with Starknet ecosystem</span>
@@ -27,7 +18,8 @@ export default function System() {
                     <p>Architect model</p>
                 </a>
             </div>
-            <Image src={isHovered ? systemImgActive : systemImg} alt="system-img"/>
+            <Image className="system-img" src={systemImg} alt="system-img"/>
+            <Image className="system-img-active" src={systemImgActive} alt="system-img-active"/>
         </div>
     );
 }

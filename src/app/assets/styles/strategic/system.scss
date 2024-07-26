@@ -1,12 +1,12 @@
 .system {
-  @apply flex rounded-[24px] items-center justify-center w-full;
+  @apply flex rounded-[24px] items-center justify-start w-full relative;
   border: none;
   background:  rgba(40, 40, 40, 0.70);
   box-shadow: 2px 4px 16px 0px rgba(248, 248, 248, 0.06) inset;
   backdrop-filter: blur(50px);
-  padding: 16px 16px 16px 0px;
+  padding: 16px;
   .system-content {
-    @apply flex flex-col w-full items-center justify-center gap-6;
+    @apply flex flex-col w-[70%] items-center justify-center gap-6 px-4;
     .system-description {
       @apply text-center text-[24px] font-normal leading-6;
       color:  rgba(248, 248, 248, 0.95);
@@ -16,26 +16,44 @@
       }
     }
     .system-architect {
-      @apply flex py-1.5 px-6 justify-center items-center gap-2 rounded-[56px] text-white font-[500] leading-9;
+      @apply flex py-1.5 px-6 justify-center items-center gap-2
+        rounded-[56px] text-white font-[500] leading-9 z-40 cursor-pointer;
       border: 0.5px solid #FFF;
       font-family: "Plus Jakarta Sans", sans-serif;
+      p, svg {
+        transition: transform 0.5s ease;
+      }
 
       &:hover {
-        @apply bg-white flex-row-reverse;
+        @apply bg-white;
         svg {
+          transform: translateX(130px);
           path {
             fill: black;
           }
         }
 
         p {
+          transform: translateX(-25px);
           @apply text-black;
         }
       }
     }
   }
-  img {
-    @apply w-[364px] h-full object-cover object-right-top;
+  .system-img{
+    @apply h-full object-contain object-right-top absolute right-0 opacity-100 rounded-[24px] z-20;
     transition: opacity 0.5s ease-in-out;
+  }
+  .system-img-active{
+    @apply h-full object-contain object-right-top absolute right-0 opacity-0 rounded-[24px] z-20;
+    transition: opacity 0.5s ease-in-out;
+  }
+  &:hover {
+    .system-img {
+      @apply opacity-0;
+    }
+    .system-img-active {
+      @apply opacity-100;
+    }
   }
 }
