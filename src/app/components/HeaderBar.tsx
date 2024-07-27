@@ -37,10 +37,10 @@ export default function HeaderBar({ onClickNav }: any) {
           <Image src={d} width={40} height={40} alt="discord" />
           <Image src={d_light} width={40} height={40} alt="discord" />
         </div>
-        <div>
+        {/* <div>
           <Image src={t} width={40} height={40} alt="telegram" />
           <Image src={t_light} width={40} height={40} alt="telegram" />
-        </div>
+        </div> */}
         <div
           onClick={() =>
             window.open(
