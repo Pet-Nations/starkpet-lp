@@ -1,17 +1,13 @@
-"use client";
+import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import React, { useRef, useEffect, useState } from "react";
-import store from "@/redux/store";
-import Image from "next/image";
+import React from "react";
 
-import background from "@/app/assets/images/background.png";
-
-import HeaderBar from "@/app/components/HeaderBar";
-import Strategic from "@/app/components/Strategic";
-import Intro from "@/app/components/Intro";
-import OurProjects from "@/app/components/OurProjects";
-import FooterBar from "@/app/components/FooterBar";
+export const metadata: Metadata = {
+  title: "Pet Labs by Pet Nations",
+  description:
+    "Lab, build all productions from Pet Nations. Ensure the stability of Pet Nations ecosystem",
+};
 
 const inter = Inter({ subsets: ["latin"] });
 export default function RootLayout({
@@ -19,22 +15,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const [strategic, setStrategic] = useState("");
-  const [projects, setProjects] = useState(false);
-
-  function scrollTo(nav: string) {
-    if (nav == "home") window.scrollTo({ top: 0, behavior: "smooth" });
-    if (nav == "projects") setProjects(true);
-    else setProjects(false);
-    if (nav == "models" || nav == "about-us") setStrategic(nav);
-    else setStrategic("");
-  }
-
   return (
     <html lang="en">
       <head>
-        <title>Stark Net</title>
-        <meta name="description" content="Stark Net LandingPage" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
@@ -49,27 +32,8 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
           rel="stylesheet"
         />
-
-        <meta property="og:url" content="" />
-        <meta property="og:title" content="Pet Labs by Pet Nations" />
-        <meta name="title" content="Pet Labs by Pet Nations" />
-        <meta
-          property="og:description"
-          content="Lab, build all productions from Pet Nations. Ensure the stability of Pet Nations ecosystem"
-        />
-        <meta
-          name="description"
-          content="Lab, build all productions from Pet Nations. Ensure the stability of Pet Nations ecosystem"
-        />
       </head>
-      <body className={inter.className + " container-stark"}>
-        <div className="background"></div>
-        <HeaderBar onClickNav={scrollTo} />
-        <Intro />
-        <Strategic scroll={strategic} />
-        <OurProjects scroll={projects} />
-        <FooterBar />
-      </body>
+      <body className={inter.className + " container-stark"}>{children}</body>
     </html>
   );
 }
