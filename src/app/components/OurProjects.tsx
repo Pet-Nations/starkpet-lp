@@ -44,9 +44,11 @@ export default function OurProjects({ scroll }: any) {
               />
             </svg>
             <div>Testnet</div>
-            <video autoPlay playsInline muted loop width={904} height={496}>
-              <source src="/projects-video.mp4" type="video/mp4" />
-            </video>
+            <div>
+              <video autoPlay playsInline muted loop width={904} height={496}>
+                <source src="/projects-video.mp4" type="video/mp4" />
+              </video>
+            </div>
             <Image src={starship} width={235} height={55} alt="starship" />
           </div>
           <div>
@@ -63,8 +65,12 @@ export default function OurProjects({ scroll }: any) {
               </div>
               <div>
                 Token. It is a type of digital asset that is unique and cannot
-                be replicated or replaced. NFTs are built using blockchain
-                technology. of a digital.
+                be replicated or replaced.
+                <span>
+                  {" "}
+                  NFTs are built using blockchain technology. of a digital.
+                </span>
+                <span>..</span>
               </div>
               <div className="go-dashboard">
                 <svg
@@ -111,8 +117,12 @@ export default function OurProjects({ scroll }: any) {
               </div>
               <div>
                 Token. It is a type of digital asset that is unique and cannot
-                be replicated or replaced. NFTs are built using blockchain
-                technology. of a digital.
+                be replicated or replaced.
+                <span>
+                  {" "}
+                  NFTs are built using blockchain technology. of a digital.
+                </span>
+                <span>..</span>
               </div>
               <div className="coming-soon">
                 <div>Coming soon</div>
@@ -134,15 +144,17 @@ export default function OurProjects({ scroll }: any) {
               />
             </svg>
             <div>Soon</div>
-            <video autoPlay playsInline muted loop width={904} height={496}>
-              <source src="/social-network.mp4" type="video/mp4" />
-            </video>
-            <Image
-              src={social_network}
-              width={904}
-              height={496}
-              alt="social-network"
-            />
+            <div>
+              <video autoPlay playsInline muted loop width={904} height={496}>
+                <source src="/social-network.mp4" type="video/mp4" />
+              </video>
+              <Image
+                src={social_network}
+                width={904}
+                height={496}
+                alt="social-network"
+              />
+            </div>
           </div>
         </div>
       </div>
