@@ -24,6 +24,11 @@ interface StrategicItemProps {
   title: string;
   text: string;
 }
+interface StrategicItemPropsMobile {
+  img: any;
+  title: string;
+  text: string;
+}
 
 const StrategicItem: React.FC<StrategicItemProps> = ({
   img,
@@ -42,7 +47,7 @@ const StrategicItem: React.FC<StrategicItemProps> = ({
     </div>
   );
 };
-const StrategicItemMobile: React.FC<StrategicItemProps> = (
+const StrategicItemMobile: React.FC<StrategicItemPropsMobile> = (
     {
       img,
       title,
