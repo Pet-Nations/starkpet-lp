@@ -37,6 +37,9 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
           rel="stylesheet"
         />
+        <meta property="og:image" content="/petlabs_02.jpg" />
+        <meta property="og:image:width" content="640" />
+        <meta property="og:image:height" content="640" />
       </Head>
       <body className={inter.className + " container-stark"}>{children}</body>
     </html>
