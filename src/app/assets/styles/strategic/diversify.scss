@@ -1,5 +1,5 @@
 .diversify {
-  @apply flex flex-col justify-center items-center gap-4 rounded-[24px] w-[421px] relative;
+  @apply flex flex-col justify-center items-center gap-4 rounded-[24px] lg:w-[421px] md:w-[40%] max-md:hidden relative;
   border: none;
   background: rgba(40, 40, 40, 0.70);
   box-shadow: 2px 4px 16px 0px rgba(248, 248, 248, 0.06) inset;
@@ -16,7 +16,7 @@
     transition: opacity 0.5s ease-in-out;
   }
   .diversify-content {
-    @apply flex flex-col gap-6 w-full h-full items-start px-4 justify-end z-40;
+    @apply flex flex-col gap-6 w-full h-full items-start xl:px-4 lg:px-0 justify-end z-40;
     .diversify-description {
       @apply flex flex-col gap-1;
       color: rgba(248, 248, 248, 0.95);
@@ -40,7 +40,7 @@
       }
       p {
         color: rgba(248, 248, 248, 0.9);
-        font-family: "Plus Jakarta Sans";
+        font-family: "Plus Jakarta Sans",sans-serif;
         font-size: 16px;
         font-style: normal;
         font-weight: 500;

@@ -1,0 +1,44 @@
+.system-mobile {
+  @apply md:hidden max-md:flex flex-col gap-4 h-[522px] px-4 pt-4 pb-8 items-center rounded-[12px] relative max-w-[342px];
+  background: rgba(40, 40, 40, 0.70);
+  box-shadow: 2px 4px 16px 0px rgba(248, 248, 248, 0.06) inset;
+  backdrop-filter: blur(50px);
+  img {
+    @apply absolute top-0 object-contain w-full h-full;
+  }
+  .system-content {
+    @apply flex flex-col justify-end h-full gap-1 items-start z-20;
+    .title-card {
+      color: rgba(248, 248, 248, 0.95);
+      font-family: Play, sans-serif;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 100% */
+      width: 100%;
+    }
+    .body-card {
+      color: rgba(248, 248, 248, 0.70);
+      font-family: Play, sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 150% */
+    }
+    .btn-follow-us {
+      display: flex;
+      padding: 6px 24px;
+      justify-content: center;
+      align-items: center;
+      gap: 4px;
+      border-radius: 56px;
+      border: 0.5px solid #FFF;
+      color: #FFF;
+      font-family: "Plus Jakarta Sans", sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 36px; /* 225% */
+    }
+  }
+}

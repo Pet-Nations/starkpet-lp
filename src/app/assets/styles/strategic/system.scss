@@ -1,19 +1,22 @@
 .system {
-  @apply flex rounded-[24px] items-center justify-start w-full relative;
+  @apply max-md:hidden flex rounded-[24px] items-center justify-start w-full relative;
   border: none;
   background:  rgba(40, 40, 40, 0.70);
   box-shadow: 2px 4px 16px 0px rgba(248, 248, 248, 0.06) inset;
   backdrop-filter: blur(50px);
   padding: 16px;
   .system-content {
-    @apply flex flex-col w-[70%] items-center justify-center gap-6 px-4;
+    @apply flex flex-col lg:w-[70%] md:w-[60%] items-center justify-center gap-6 xl:px-4 lg:px-0;
     .system-description {
-      @apply text-center text-[24px] font-normal leading-6;
+      @apply flex flex-col gap-1 text-center text-[24px] font-normal leading-6;
       color:  rgba(248, 248, 248, 0.95);
       font-family: Play, sans-serif;
       p {
         @apply text-[16px];
         color: rgba(248, 248, 248, 0.7);
+        br{
+          @apply xl:inline lg:hidden;
+        }
       }
     }
     .system-architect {

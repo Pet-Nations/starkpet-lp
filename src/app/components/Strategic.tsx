@@ -4,13 +4,19 @@ import Diversify from "@/app/components/strategic/Diversify";
 import System from "@/app/components/strategic/System";
 import productionImg from "@/app/assets/images/strategic/production/img.png";
 import productionImgActive from "@/app/assets/images/strategic/production/img-active.png";
+import productionImgMobile from "@/app/assets/images/strategic/production/img-mobile.png";
 import deepImg from "@/app/assets/images/strategic/deep/img.png";
 import deepImgActive from "@/app/assets/images/strategic/deep/img-active.png";
+import deepImgMobile from "@/app/assets/images/strategic/deep/img-mobile.png";
 import tractionImg1 from "@/app/assets/images/strategic/tractions/img_1.png";
 import tractionImg2 from "@/app/assets/images/strategic/tractions/img_2.png";
 import tractionImg3 from "@/app/assets/images/strategic/tractions/img_3.png";
+import tractionMobile from "@/app/assets/images/strategic/tractions/img-mobile.png";
 import Image from "next/image";
 import { useState, useRef, useEffect } from "react";
+import AboutUsMobile from "@/app/components/strategic/AboutUsMobile";
+import DiversifyMobile from "@/app/components/strategic/DiversityMobile";
+import SystemMobile from "@/app/components/strategic/SystemMobile";
 
 interface StrategicItemProps {
   img: any;
@@ -34,6 +40,22 @@ const StrategicItem: React.FC<StrategicItemProps> = ({
         <p>{text}</p>
       </div>
     </div>
+  );
+};
+const StrategicItemMobile: React.FC<StrategicItemProps> = (
+    {
+      img,
+      title,
+      text,
+    }) => {
+  return (
+      <div className="strategic-item-mobile">
+        <Image src={img} alt={"img"}/>
+        <div className="card-item">
+          <span className="card-title">{title}</span>
+          <p className="card-text">{text}</p>
+        </div>
+      </div>
   );
 };
 
@@ -72,14 +94,35 @@ export default function Strategic({ scroll }: any) {
     },
   ];
 
+  const strategicGroup3Mobile = [
+    {
+      img: productionImgMobile,
+      title: "Production diversify",
+      text: "Never top in ideas, the Pet Nations Lab bring all potential ideas on web3.",
+    },
+    {
+      img: deepImgMobile,
+      title: "Deep RnD",
+      text: "The Pet Nations Lab always try to focus and follow the market to make sure RnD is foresight.",
+    },
+    {
+      img: tractionMobile,
+      title: "Tractions blackhole",
+      text: "Bring all tractions with awareness from the power of lab productions.",
+    },
+  ];
+
   return (
     <div className="strategic">
       <div ref={about_us} className="strategic-group-1">
         <AboutUs />
         <Diversify />
+        <AboutUsMobile/>
+        <DiversifyMobile/>
       </div>
       <div className="strategic-group-2">
         <System />
+        <SystemMobile/>
       </div>
       <div ref={models} className="strategic-group-3">
         {strategicGroup3.map((item, index) => (
@@ -104,6 +147,16 @@ export default function Strategic({ scroll }: any) {
               productions.
             </p>
           </div>
+        </div>
+        <div className="strategic-group-3-mobile">
+          {strategicGroup3Mobile.map((item, index) => (
+              <StrategicItemMobile
+                  key={index}
+                  img={item.img}
+                  title={item.title}
+                  text={item.text}
+              />
+          ))}
         </div>
       </div>
     </div>
