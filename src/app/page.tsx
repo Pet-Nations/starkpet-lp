@@ -8,7 +8,6 @@ import Strategic from "@/app/components/Strategic";
 import Intro from "@/app/components/Intro";
 import OurProjects from "@/app/components/OurProjects";
 import FooterBar from "@/app/components/FooterBar";
-import HeaderBar1 from "@/app/components/HeaderBar1";
 
 export default function Home() {
   const [strategic, setStrategic] = useState("");
