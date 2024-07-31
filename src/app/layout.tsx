@@ -24,7 +24,7 @@ export default function RootLayout({
       <head>
         <title>Pet Labs by Pet Nations</title>
         <meta name="description" content="Lab, build all productions from Pet Nations. Ensure the stability of Pet Nations ecosystem"/>
-        <meta property="og:image" content="https://labs.petnations.io/petlabs_02.jpg" />
+        <meta property="og:image" content="https://labs.petnations.io/thumbnail.jpg" />
         <meta property="og:image:width" content="640" />
         <meta property="og:image:height" content="640" />
         <link rel="icon" href="/favicon.ico" />
