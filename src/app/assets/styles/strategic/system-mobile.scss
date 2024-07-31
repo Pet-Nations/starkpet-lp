@@ -1,5 +1,5 @@
 .system-mobile {
-  @apply md:hidden max-md:flex flex-col gap-4 h-[522px] px-4 pt-4 pb-8 items-center rounded-[12px] relative max-w-[342px];
+  @apply md:hidden max-md:flex flex-col gap-4 h-[522px] px-4 pt-4 pb-8 items-center rounded-[12px] relative w-full;
   background: rgba(40, 40, 40, 0.70);
   box-shadow: 2px 4px 16px 0px rgba(248, 248, 248, 0.06) inset;
   backdrop-filter: blur(50px);
@@ -28,6 +28,7 @@
     .btn-follow-us {
       display: flex;
       padding: 6px 24px;
+      margin-top: 20px;
       justify-content: center;
       align-items: center;
       gap: 4px;

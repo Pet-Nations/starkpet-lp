@@ -1,5 +1,5 @@
 .strategic {
-  @apply flex flex-col w-full max-w-[1440px] xl:px-20 lg:px-6 md:px-4 max-md:px-4 gap-1;
+  @apply flex flex-col w-[95%] gap-1 max-w-[1280px];
   .strategic-group-1 {
     @apply flex w-full lg:h-[481px] md:h-[420px] gap-1 max-md:flex-col max-md:h-auto max-md:items-center;
   }
@@ -24,11 +24,11 @@
         transition: opacity 0.5s ease-in-out;
       }
       .content {
-        @apply flex flex-col gap-1 xl:px-4 md:px-0 text-[24px] font-normal leading-6 h-full justify-end;
+        @apply flex flex-col gap-1 xl:px-4 md:px-0 xl:text-[24px] md:text-[22px] font-normal leading-6 h-full justify-end;
         color: rgba(248, 248, 248, 0.95);
         font-family: Play, sans-serif;
         p {
-          @apply text-[16px];
+          @apply xl:text-[16px] md:text-[14px];
           color: rgba(248, 248, 248, 0.7);
         }
       }
@@ -72,12 +72,12 @@
     .strategic-group-3-mobile {
       @apply md:hidden flex flex-col gap-1 w-full items-center;
       .strategic-item-mobile {
-        @apply md:hidden max-md:flex flex-col gap-4 h-[480px] px-4 pt-4 pb-8 items-center rounded-[12px] relative max-w-[342px];
+        @apply md:hidden max-md:flex flex-col gap-4 h-[480px] px-4 pt-4 pb-8 items-center rounded-[12px] relative w-full;
         background: rgba(40, 40, 40, 0.70);
         box-shadow: 2px 4px 16px 0px rgba(248, 248, 248, 0.06) inset;
         backdrop-filter: blur(50px);
         img {
-          @apply absolute top-0 object-contain w-full;
+          @apply absolute top-0 object-top object-contain w-full h-full;
         }
         .card-item {
           @apply flex flex-col justify-end h-full gap-1 items-start;

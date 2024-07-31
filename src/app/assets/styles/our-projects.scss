@@ -823,3 +823,131 @@
     }
   }
 }
+
+@media screen and (max-width: 640px) {
+  .our-projects {
+    > div:nth-child(1) {
+      font-size: 70px;
+    }
+    > .content {
+      > div {
+        flex-direction: column;
+      }
+      > div:nth-child(1) {
+        gap: 10px;
+        > div:nth-child(1) {
+          width: 100%;
+
+          > div:nth-child(3) {
+            width: 100%;
+
+            > video {
+              width: 100%;
+              height: auto;
+            }
+          }
+          > img:nth-child(4) {
+            width: 35%;
+          }
+          > svg {
+            width: 12%;
+          }
+        }
+        > div:nth-child(2) {
+          > img {
+            height: 434px;
+          }
+          > div {
+            > div:nth-child(1) {
+              > div {
+                font-size: 18px;
+              }
+            }
+            > div:nth-child(2) {
+              font-size: 46px;
+            }
+            > div:nth-child(3) {
+              > img {
+                height: 44px;
+              }
+            }
+            > div:nth-child(4) {
+              font-size: 16px;
+              > span:nth-child(1) {
+                display: inline;
+              }
+              > span:nth-child(2) {
+                display: none;
+              }
+            }
+            > .go-dashboard {
+              width: 190px;
+              height: 48px;
+              > svg {
+                display: block;
+                width: 25px;
+                height: 25px;
+              }
+              > div {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+      > div:nth-child(2) {
+        flex-direction: column-reverse;
+        gap: 10px;
+        > div:nth-child(2) {
+          width: 100%;
+
+          > img:nth-child(4) {
+            width: 100%;
+            height: auto;
+          }
+          > svg {
+            width: 12%;
+            height: auto;
+          }
+        }
+        > div:nth-child(1) {
+          > img {
+            width: 100%;
+            height: 434px;
+          }
+          > div {
+            > div:nth-child(1) {
+              > div {
+                font-size: 18px;
+              }
+            }
+            > div:nth-child(2) {
+              font-size: 46px;
+            }
+            > div:nth-child(3) {
+              > img {
+                height: 44px;
+              }
+            }
+            > div:nth-child(4) {
+              font-size: 16px;
+              > span:nth-child(1) {
+                display: inline;
+              }
+              > span:nth-child(2) {
+                display: none;
+              }
+            }
+            > .coming-soon {
+              width: 190px;
+              height: 48px;
+              > div {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
