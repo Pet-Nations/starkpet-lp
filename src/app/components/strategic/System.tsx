@@ -9,7 +9,7 @@ export default function System() {
             <div className="system-content">
                 <div className="system-description">
                     <span>Focus to maximize the contribution with Blockchain ecosystem</span>
-                    <p>Within various Blockchain identities and partners, we aim to connect and collab with them to enhance the <br/> output of the Pet Nations Lab</p>
+                    <p>Within various blockchain identities and partners, we aim to connect and collab with them to enhance the <br/> output of the Pet Nations Lab</p>
                 </div>
                 <a className="system-architect">
                     <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
