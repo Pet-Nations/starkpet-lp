@@ -89,7 +89,7 @@ export default function Strategic({ scroll }: any) {
       img: productionImg,
       imgActive: productionImgActive,
       title: "Production diversify",
-      text: "Never top in ideas, the Pet Nations Lab bring all potential ideas on web3.",
+      text: "Never stop in ideas, the Pet Nations Lab bring all potential ideas on web3.",
     },
     {
       img: deepImg,
