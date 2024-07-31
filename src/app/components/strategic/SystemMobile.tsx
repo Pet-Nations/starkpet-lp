@@ -7,9 +7,9 @@ export default function SystemMobile() {
         <div className="system-mobile">
             <Image src={systemMobileImg} alt="aboutUsImgMobile"/>
             <div className="system-content">
-                <span className="title-card">Focus to maximize the contribution with Starknet ecosystem</span>
+                <span className="title-card">Focus to maximize the contribution with Blockchain ecosystem</span>
                 <span className="body-card">
-                    Within various Starknet identities and partners, we aim to connect and collab with them to enhance the output of the Pet Nations Lab
+                    Within various Blockchain identities and partners, we aim to connect and collab with them to enhance the output of the Pet Nations Lab
                 </span>
                 <button className="btn-follow-us">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
