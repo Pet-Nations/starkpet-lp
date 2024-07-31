@@ -1,5 +1,5 @@
 import "@/app/assets/styles/strategic/system-mobile.scss";
-import systemMobileImg from "@/app/assets/images/strategic/system/system-mobile.png";
+import systemMobileImg from "@/app/assets/images/strategic/system/img-mobile.png";
 import Image from "next/image";
 export default function SystemMobile() {
 
