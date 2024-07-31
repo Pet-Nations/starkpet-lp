@@ -18,19 +18,11 @@ export default function HeaderBar({ onClickNav }: any) {
   const [open, setOpen] = useState(false);
 
   function toggleMenu() {
-    const ele = document.querySelector(
-      ".header-bar > .mobile-menu",
-    ) as HTMLElement;
-    if (!ele) return;
-
-    if (!open) ele.style.right = "-16px";
-    else ele.style.right = "-240px";
     setOpen(!open);
   }
 
   function clickNav(value: string) {
     onClickNav(value);
-    if (window.innerWidth <= 768) toggleMenu();
   }
 
   return (
@@ -50,24 +42,24 @@ export default function HeaderBar({ onClickNav }: any) {
       </div>
       <div style={{ flex: 1 }}></div>
       <div className="media">
-        <div onClick={() => window.open("https://discord.com/invite/8RnCua96")}>
-          <Image src={d} width={40} height={40} alt="discord" />
-          <Image src={d_light} width={40} height={40} alt="discord" />
-        </div>
+        {/*<div onClick={() => window.open("https://discord.com/invite/8RnCua96")}>*/}
+        {/*  <Image src={d} width={40} height={40} alt="discord" />*/}
+        {/*  <Image src={d_light} width={40} height={40} alt="discord" />*/}
+        {/*</div>*/}
         {/* <div>
           <Image src={t} width={40} height={40} alt="telegram" />
           <Image src={t_light} width={40} height={40} alt="telegram" />
         </div> */}
-        <div
-          onClick={() =>
-            window.open(
-              "https://www.youtube.com/channel/UCzYllb_kpUHdzuDKuz1Lylw",
-            )
-          }
-        >
-          <Image src={y} width={40} height={40} alt="youtube" />
-          <Image src={y_light} width={40} height={40} alt="youtube" />
-        </div>
+        {/*<div*/}
+        {/*  onClick={() =>*/}
+        {/*    window.open(*/}
+        {/*      "https://www.youtube.com/channel/UCzYllb_kpUHdzuDKuz1Lylw",*/}
+        {/*    )*/}
+        {/*  }*/}
+        {/*>*/}
+        {/*  <Image src={y} width={40} height={40} alt="youtube" />*/}
+        {/*  <Image src={y_light} width={40} height={40} alt="youtube" />*/}
+        {/*</div>*/}
         <div onClick={() => window.open("https://x.com/pet_nations")}>
           <Image src={x} width={40} height={40} alt="twitter" />
           <Image src={x_light} width={40} height={40} alt="twitter" />
@@ -90,40 +82,42 @@ export default function HeaderBar({ onClickNav }: any) {
           onClick={() => toggleMenu()}
         />
       )}
-      <div className="mobile-menu">
-        <div className="nav">
-          <div onClick={() => clickNav("home")}>[ 01 ] Home</div>
-          <div onClick={() => clickNav("about-us")}>[ 02 ] About_Us</div>
-          <div onClick={() => clickNav("models")}>[ 03 ] Our_Model</div>
-          <div onClick={() => clickNav("projects")}>[ 04 ] Our_Projects</div>
-        </div>
-        <div className="media">
-          <div
-            onClick={() => window.open("https://discord.com/invite/8RnCua96")}
-          >
-            <Image src={d} width={40} height={40} alt="discord" />
-            <Image src={d_light} width={40} height={40} alt="discord" />
+      {open ? <div className="mobile-menu-group">
+        <div className="mobile-menu">
+          <div className="nav">
+            <div onClick={() => clickNav("home")}>[ 01 ] Home</div>
+            <div onClick={() => clickNav("about-us")}>[ 02 ] About_Us</div>
+            <div onClick={() => clickNav("models")}>[ 03 ] Our_Model</div>
+            <div onClick={() => clickNav("projects")}>[ 04 ] Our_Projects</div>
           </div>
-          {/* <div>
+          <div className="media">
+            {/*<div*/}
+            {/*    onClick={() => window.open("https://discord.com/invite/8RnCua96")}*/}
+            {/*>*/}
+            {/*  <Image src={d} width={40} height={40} alt="discord" />*/}
+            {/*  <Image src={d_light} width={40} height={40} alt="discord" />*/}
+            {/*</div>*/}
+            {/* <div>
           <Image src={t} width={40} height={40} alt="telegram" />
           <Image src={t_light} width={40} height={40} alt="telegram" />
         </div> */}
-          <div
-            onClick={() =>
-              window.open(
-                "https://www.youtube.com/channel/UCzYllb_kpUHdzuDKuz1Lylw",
-              )
-            }
-          >
-            <Image src={y} width={40} height={40} alt="youtube" />
-            <Image src={y_light} width={40} height={40} alt="youtube" />
-          </div>
-          <div onClick={() => window.open("https://x.com/pet_nations")}>
-            <Image src={x} width={40} height={40} alt="twitter" />
-            <Image src={x_light} width={40} height={40} alt="twitter" />
+            {/*<div*/}
+            {/*    onClick={() =>*/}
+            {/*        window.open(*/}
+            {/*            "https://www.youtube.com/channel/UCzYllb_kpUHdzuDKuz1Lylw",*/}
+            {/*        )*/}
+            {/*    }*/}
+            {/*>*/}
+            {/*  <Image src={y} width={40} height={40} alt="youtube" />*/}
+            {/*  <Image src={y_light} width={40} height={40} alt="youtube" />*/}
+            {/*</div>*/}
+            <div onClick={() => window.open("https://x.com/pet_nations")}>
+              <Image src={x} width={40} height={40} alt="twitter" />
+              <Image src={x_light} width={40} height={40} alt="twitter" />
+            </div>
           </div>
         </div>
-      </div>
+      </div> : ''}
     </div>
   );
 }

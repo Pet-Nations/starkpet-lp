@@ -15,7 +15,7 @@
         @apply xl:text-[16px] md:text-[14px];
         color: rgba(248, 248, 248, 0.7);
         br{
-          @apply xl:inline lg:hidden;
+          @apply xl:inline md:hidden;
         }
       }
     }

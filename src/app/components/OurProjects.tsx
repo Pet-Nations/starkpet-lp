@@ -3,10 +3,12 @@ import Image from "next/image";
 import "@/app/assets/styles/our-projects.scss";
 
 import starship from "@/app/assets/images/our-projects/title-starship.png";
-import background from "@/app/assets/images/our-projects/starship-background.png";
+import starshipBunny from "@/app/assets/images/our-projects/starkship-bunny.png";
 import starknet from "@/app/assets/images/our-projects/starknet.svg";
-import social_network from "@/app/assets/images/our-projects/social-network.png";
-
+import social_network from "@/app/assets/images/our-projects/social.png";
+import triangle from "@/app/assets/images/our-projects/triangle.svg";
+import bgMobile from "@/app/assets/images/our-projects/starship-background.png";
+import bg from "@/app/assets/images/our-projects/bg.png";
 export default function OurProjects({ scroll }: any) {
   const projects = useRef(null);
   useEffect(() => {
@@ -26,124 +28,154 @@ export default function OurProjects({ scroll }: any) {
 
   return (
     <div ref={projects} className="our-projects">
-      <div>Our projects</div>
-      <div className="content">
-        <div>
-          <div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="124"
-              height="110"
-              viewBox="0 0 124 110"
-              fill="none"
-            >
-              <path
-                d="M1 106.5V4.12839C1 1.54816 4.04137 0.171633 5.97988 1.87449L122.519 104.246C124.598 106.072 123.306 109.5 120.539 109.5H4C2.34315 109.5 1 108.157 1 106.5Z"
-                stroke="white"
-                strokeWidth="0.5"
-              />
-            </svg>
-            <div>Testnet</div>
-            <div>
-              <video autoPlay playsInline muted loop width={904} height={496}>
-                <source src="/projects-video.mp4" type="video/mp4" />
-              </video>
+      <div className="our-projects-title">Our projects</div>
+      <div className="our-projects-body">
+        <div className="group-content-1">
+          <div className="group-img">
+            <Image src={starshipBunny} alt="starshipBunny"/>
+            <Image className="starkship-logo" src={starship} alt="starshipB"/>
+
+            <div className="triangle">
+              <Image src={triangle} alt="triangle"/>
+              <p>TESTNET</p>
             </div>
-            <Image src={starship} width={235} height={55} alt="starship" />
+
           </div>
-          <div>
-            <Image src={background} width={368} height={496} alt="background" />
-            <div>
-              <div>
-                <div>01/</div>
-                <div>Nft / Fully onchain game</div>
+          <div className="content">
+            <Image className="background-our" src={bg} alt={'background'}/>
+            <div className="group-1">
+              <span>01/</span>
+              <span>NFT / FULLY ONCHAIN GAME</span>
+            </div>
+            <div className="group-2">
+              <div className="content-1">
+                STARKsHIP
               </div>
-              <div>Starkship</div>
-              <div>
-                <div>Build on</div>
-                <Image src={starknet} width={211} height={48} alt="starknet" />
+              <div className="content-2">
+                <span>Build on </span>
+                <Image src={starknet} alt="starknet"/>
               </div>
-              <div>
+              <div className="content-3">
                 Complete your mission by enable the power box to regenerate power source for your ship and achieve the Stark Galaxy.
               </div>
-              <div className="go-dashboard">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="25"
-                  height="25"
-                  viewBox="0 0 25 25"
-                  fill="none"
-                >
-                  <path
-                    d="M16.0946 9.66421L7.48803 18.2708L6.07382 16.8566L14.6804 8.25H7.09464V6.25H18.0946V17.25H16.0946V9.66421Z"
-                    fill="white"
-                  />
+            </div>
+            <div className="group-3">
+              <a className="btn-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                  <path d="M16.5946 9.66421L7.98803 18.2708L6.57382 16.8566L15.1804 8.25H7.59464V6.25H18.5946V17.25H16.5946V9.66421Z" fill="white"/>
                 </svg>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="25"
-                  height="25"
-                  viewBox="0 0 25 25"
-                  fill="none"
-                >
-                  <path
-                    d="M16.0946 9.66421L7.48803 18.2708L6.07382 16.8566L14.6804 8.25H7.09464V6.25H18.0946V17.25H16.0946V9.66421Z"
-                    fill="black"
-                  />
+                <p>Let’s explore</p>
+              </a>
+              <a className="btn-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                  <path d="M16.5946 9.66421L7.98803 18.2708L6.57382 16.8566L15.1804 8.25H7.59464V6.25H18.5946V17.25H16.5946V9.66421Z" fill="white"/>
                 </svg>
-                <div>Go to dashboard</div>
-              </div>
+                <p>See our model</p>
+              </a>
             </div>
           </div>
         </div>
-        <div>
-          <div>
-            <Image src={background} width={368} height={496} alt="background" />
-            <div>
-              <div>
-                <div>02/</div>
-                <div>Socialfi</div>
+        <div className="group-content-2">
+          <div className="content">
+            <Image className="background-our" src={bg} alt={'background'}/>
+            <div className="group-1">
+              <span>02/</span>
+              <span>SOCIALFI</span>
+            </div>
+            <div className="group-2">
+              <div className="content-1">
+                social network
               </div>
-              <div>social network</div>
-              <div>
-                <div>Build on</div>
-                {/*<Image src={starknet} width={211} height={48} alt="starknet" />*/}
-                <span className="coming-soon">Comming soon</span>
+              <div className="content-2">
+                <span>Build on </span>
+                <span>COMING SOON</span>
               </div>
-              <div>
-                All in one social playground for pet web3. Try to explore your creativity and join in the decentralized pet web3 ecosystem.
-              </div>
-              <div className="coming-soon">
-                <div>Coming soon</div>
-              </div>
+              <div className="content-3">
+                All in one social playground for pet web3. Try to explore your creativity and join in the decentralized pet web3 ecosystem.              </div>
+            </div>
+            <div className="group-3">
+              <a className="btn-1">
+                Coming soon
+              </a>
             </div>
           </div>
-          <div>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="124"
-              height="110"
-              viewBox="0 0 124 110"
-              fill="none"
-            >
-              <path
-                d="M1 106.5V4.12839C1 1.54816 4.04137 0.171633 5.97988 1.87449L122.519 104.246C124.598 106.072 123.306 109.5 120.539 109.5H4C2.34315 109.5 1 108.157 1 106.5Z"
-                stroke="white"
-                strokeWidth="0.5"
-              />
-            </svg>
-            <div>Soon</div>
-            <div>
-              <video autoPlay playsInline muted loop width={904} height={496}>
-                <source src="/social-network.mp4" type="video/mp4" />
-              </video>
-              <Image
-                src={social_network}
-                width={904}
-                height={496}
-                alt="social-network"
-              />
+          <div className="group-img">
+            <Image src={social_network} alt="starshipBunny"/>
+            <div className="triangle">
+              <Image src={triangle} alt="triangle"/>
+              <p>SOON</p>
             </div>
+
+          </div>
+        </div>
+      </div>
+      <div className="our-projects-body-mobile">
+        <div className="group-image-mobile">
+          <Image src={starshipBunny} alt={"starshipBunny"}/>
+          <Image className="starship-logo" src={starship} alt={"starship"}/>
+          <Image src={triangle} alt={"triangle"}/>
+        </div>
+        <div className="content">
+          <Image className="bg-mobile" src={bgMobile} alt={"bgMobile"}/>
+          <div className="group-1">
+            <span>01/</span>
+            <span>NFT / FULLY ONCHAIN GAME</span>
+          </div>
+          <div className="group-2">
+            <div className="content-1">
+              STARKsHIP
+            </div>
+            <div className="content-2">
+              <span>Build on </span>
+              <Image src={starknet} alt="starknet"/>
+            </div>
+            <div className="content-3">
+              Complete your mission by enable the power box to regenerate power source for your ship and achieve the Stark Galaxy.
+            </div>
+          </div>
+          <div className="group-3">
+            <a className="btn-1">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                <path d="M16.5946 9.66421L7.98803 18.2708L6.57382 16.8566L15.1804 8.25H7.59464V6.25H18.5946V17.25H16.5946V9.66421Z" fill="white"/>
+              </svg>
+              <p>Let’s explore</p>
+            </a>
+            <a className="btn-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                <path d="M16.5946 9.66421L7.98803 18.2708L6.57382 16.8566L15.1804 8.25H7.59464V6.25H18.5946V17.25H16.5946V9.66421Z" fill="white"/>
+              </svg>
+              <p>See our model</p>
+            </a>
+          </div>
+        </div>
+        <div className="group-image-mobile">
+          <Image src={social_network} alt={"social_network"}/>
+          <Image src={triangle} alt={"triangle"}/>
+        </div>
+        <div className="content">
+          <Image className="bg-mobile" src={bgMobile} alt={"bgMobile"}/>
+          <div className="group-1">
+            <span>02/</span>
+            <span>SOCIALFI</span>
+          </div>
+          <div className="group-2">
+            <div className="content-1">
+              social network
+            </div>
+            <div className="content-2">
+              <span>Build on </span>
+              <p>COMING SOON</p>
+            </div>
+            <div className="content-3">
+              All in one social playground for pet web3. Try to explore your creativity and join in the decentralized pet web3 ecosystem.             </div>
+          </div>
+          <div className="group-3">
+            <a className="btn-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
+                <path d="M16.5946 9.66421L7.98803 18.2708L6.57382 16.8566L15.1804 8.25H7.59464V6.25H18.5946V17.25H16.5946V9.66421Z" fill="white"/>
+              </svg>
+              <p>Go to dashboard</p>
+            </a>
           </div>
         </div>
       </div>
