@@ -64,13 +64,7 @@ export default function OurProjects({ scroll }: any) {
                 <Image src={starknet} width={211} height={48} alt="starknet" />
               </div>
               <div>
-                Token. It is a type of digital asset that is unique and cannot
-                be replicated or replaced.
-                <span>
-                  {" "}
-                  NFTs are built using blockchain technology. of a digital.
-                </span>
-                <span>..</span>
+                Complete your mission by enable the power box to regenerate power source for your ship and achieve the Stark Galaxy.
               </div>
               <div className="go-dashboard">
                 <svg
@@ -113,16 +107,11 @@ export default function OurProjects({ scroll }: any) {
               <div>social network</div>
               <div>
                 <div>Build on</div>
-                <Image src={starknet} width={211} height={48} alt="starknet" />
+                {/*<Image src={starknet} width={211} height={48} alt="starknet" />*/}
+                <span className="coming-soon">Comming soon</span>
               </div>
               <div>
-                Token. It is a type of digital asset that is unique and cannot
-                be replicated or replaced.
-                <span>
-                  {" "}
-                  NFTs are built using blockchain technology. of a digital.
-                </span>
-                <span>..</span>
+                All in one social playground for pet web3. Try to explore your creativity and join in the decentralized pet web3 ecosystem.
               </div>
               <div className="coming-soon">
                 <div>Coming soon</div>
