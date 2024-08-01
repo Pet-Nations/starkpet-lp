@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 
 import "@/app/assets/styles/intro.scss";
 import intro from "@/app/assets/images/intro/intro-img.svg";
-import intro_mobile from "@/app/assets/images/intro/intro-img-mobile.svg";
+import intro_mobile from "@/app/assets/images/intro/intro-img-mobile.png";
 
 export default function Intro() {
   const [screenWidth, setScreenWidth] = useState(0);

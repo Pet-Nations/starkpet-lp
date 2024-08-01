@@ -45,6 +45,11 @@ body {
 }
 
 @font-face {
+  font-family: Poppins-Extrabold;
+  src: url("/Poppins-ExtraBold.ttf");
+}
+
+@font-face {
   font-family: Anton;
   src: url("/Anton-Regular.ttf");
 }
