@@ -2,29 +2,30 @@
   @apply flex w-[95%] flex-col items-center max-w-[1280px] mb-10;
   .our-projects-title {
     @apply w-full text-[#242424]
-    2xl:text-[240px] xl:text-[225px] lg:text-[180px] md:text-[135px] max-md:text-[93px]
+    2xl:text-[240px] xl:text-[225px] lg:text-[180px] md:text-[135px] max-md:text-[93px] max-[350px]:text-[80px]
     font-normal uppercase text-center;
     font-family: Anton;
   }
   .our-projects-body {
     @apply flex flex-col w-full max-md:hidden;
     .group-content-1 {
-      @apply flex max-md:flex-col max-md:h-full gap-2 w-full h-[497px];
+      @apply flex max-md:flex-col max-md:h-full gap-2 w-full h-[550px];
       .group-img {
         @apply xl:basis-[72%] lg:basis-[65%] md:basis-2/3 relative h-full;
         .starkship-logo {
           @apply absolute top-5 z-40 right-5;
         }
         .triangle {
-          @apply absolute bottom-0 left-0 xl:scale-100;
-          transform-origin: left;
+          @apply absolute bottom-0 left-0 scale-[80%];
+          transform-origin: left bottom;
           p {
             @apply absolute left-2 bottom-2 text-[14px];
           }
         }
         .video-bunny {
           @apply w-full h-full;
-          clip-path: path("M24 0H880C893.255 0 904 10.7452 904 24V472C904 485.255 893.255 496 880 496L157.295 496C151.512 496 145.924 493.912 141.558 490.121L8.26358 374.366C3.01455 369.808 0 363.197 0 356.245V24C0 10.7452 10.7452 0 24 0Z");
+          clip-path: path("M24 0H950C963.255 0 974 10.7452 974 24V550C974 563.255 963.255 574 950 574L157.295 574C151.512 574 145.924 571.912 141.558 568.121L8.26358 452.366C3.01455 447.808 0 441.197 0 434.245V24C0 10.7452 10.7452 0 24 0Z");
+
           video {
             @apply w-full h-full object-cover rounded-[24px];
           }
@@ -123,18 +124,19 @@
       }
     }
     .group-content-2 {
-      @apply flex gap-2 h-[497px] w-full mt-1;
+      @apply flex gap-2 w-full mt-1 h-[550px];
       .group-img {
         @apply xl:basis-[72%] lg:basis-[65%] md:basis-2/3 relative;
         .social-network {
           @apply w-full h-full ;
-          clip-path: path("M24 0H880C893.255 0 904 10.7452 904 24V472C904 485.255 893.255 496 880 496L157.295 496C151.512 496 145.924 493.912 141.558 490.121L8.26358 374.366C3.01455 369.808 0 363.197 0 356.245V24C0 10.7452 10.7452 0 24 0Z");
+          clip-path: path("M24 0H950C963.255 0 974 10.7452 974 24V550C974 563.255 963.255 574 950 574L157.295 574C151.512 574 145.924 571.912 141.558 568.121L8.26358 452.366C3.01455 447.808 0 441.197 0 434.245V24C0 10.7452 10.7452 0 24 0Z");
           img {
             @apply w-full h-full object-cover rounded-[24px];
           }
         }
         .triangle {
-          @apply absolute bottom-0 left-0;
+          @apply absolute bottom-0 left-0 scale-[80%];
+          transform-origin: left bottom;
           p {
             @apply absolute left-2 bottom-2 text-[14px];
           }
@@ -223,15 +225,23 @@
   .our-projects-body-mobile {
     @apply md:hidden max-md:flex flex-col w-full gap-4;
     .group-image-mobile {
-      @apply w-full relative;
+      @apply w-full h-full relative;
+      .video-bunny {
+        @apply w-full h-[200px] rounded-[24px];
+        clip-path: path("M24 0H880C893.255 0 904 10.7452 904 24V224C904 237.255 893.255 248 880 248L157.295 248C151.512 248 145.924 245.912 141.558 242.121L8.26358 126.366C3.01455 121.808 0 115.197 0 108.245V24C0 10.7452 10.7452 0 24 0Z");
+        video {
+          @apply w-full h-full object-cover rounded-[24px];
+        }
+      }
       img:first-child {
-        @apply w-full;
+        @apply w-full h-[200px] rounded-[24px];
+        clip-path: path("M24 0H880C893.255 0 904 10.7452 904 24V224C904 237.255 893.255 248 880 248L157.295 248C151.512 248 145.924 245.912 141.558 242.121L8.26358 126.366C3.01455 121.808 0 115.197 0 108.245V24C0 10.7452 10.7452 0 24 0Z");
       }
       .starship-logo {
         @apply absolute top-2 right-2 w-[89px] h-[21px];
       }
       img:last-child {
-        @apply absolute bottom-0 left-0 h-[10] w-[96px] sm:scale-90 max-md:scale-50;
+        @apply absolute bottom-0 left-0 h-[10] w-[96px] max-md:scale-[80%];
         transform-origin: left bottom;
       }
     }

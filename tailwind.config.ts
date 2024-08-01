@@ -28,6 +28,7 @@ const config: Config = {
         '20': '20px',
         '10': '10px',
       },
+
     },
   },
   plugins: [],

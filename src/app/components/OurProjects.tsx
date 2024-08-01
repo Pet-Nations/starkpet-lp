@@ -5,7 +5,7 @@ import "@/app/assets/styles/our-projects.scss";
 import starship from "@/app/assets/images/our-projects/title-starship.png";
 import starshipBunny from "@/app/assets/images/our-projects/starkship-bunny.png";
 import starknet from "@/app/assets/images/our-projects/starknet.svg";
-import social_network from "@/app/assets/images/our-projects/social.png";
+import social_network from "@/app/assets/images/our-projects/social-network.png";
 import triangle from "@/app/assets/images/our-projects/triangle.svg";
 import bgMobile from "@/app/assets/images/our-projects/starship-background.png";
 import bg from "@/app/assets/images/our-projects/bg.png";
@@ -66,7 +66,7 @@ export default function OurProjects({ scroll }: any) {
               </div>
             </div>
             <div className="group-3">
-              <a className="btn-1">
+              <a href="https://starkship.petnations.io/" target="_blank" className="btn-1">
                 <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
                   <path d="M16.5946 9.66421L7.98803 18.2708L6.57382 16.8566L15.1804 8.25H7.59464V6.25H18.5946V17.25H16.5946V9.66421Z" fill="white"/>
                 </svg>
@@ -113,13 +113,17 @@ export default function OurProjects({ scroll }: any) {
               <Image src={triangle} alt="triangle"/>
               <p>SOON</p>
             </div>
-
           </div>
         </div>
       </div>
       <div className="our-projects-body-mobile">
         <div className="group-image-mobile">
-          <Image src={starshipBunny} alt={"starshipBunny"}/>
+          <div className="video-bunny">
+            <video autoPlay loop muted playsInline preload="none">
+              <source src={videoBunny} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
           <Image className="starship-logo" src={starship} alt={"starship"}/>
           <Image src={triangle} alt={"triangle"}/>
         </div>
@@ -142,7 +146,7 @@ export default function OurProjects({ scroll }: any) {
             </div>
           </div>
           <div className="group-3">
-            <a className="btn-1">
+            <a href="https://starkship.petnations.io/" target="_blank" className="btn-1">
               <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
                 <path d="M16.5946 9.66421L7.98803 18.2708L6.57382 16.8566L15.1804 8.25H7.59464V6.25H18.5946V17.25H16.5946V9.66421Z" fill="white"/>
               </svg>
@@ -179,9 +183,6 @@ export default function OurProjects({ scroll }: any) {
           </div>
           <div className="group-3">
             <a className="btn-3">
-              {/*<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">*/}
-              {/*  <path d="M16.5946 9.66421L7.98803 18.2708L6.57382 16.8566L15.1804 8.25H7.59464V6.25H18.5946V17.25H16.5946V9.66421Z" fill="white"/>*/}
-              {/*</svg>*/}
               <p>COMING SOON</p>
             </a>
           </div>
