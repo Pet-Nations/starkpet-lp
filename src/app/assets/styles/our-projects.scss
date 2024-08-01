@@ -22,7 +22,7 @@
           @apply absolute bottom-0 left-0 xl:scale-100 lg:scale-x-75 md:scale-x-[60%];
           transform-origin: left;
           p {
-            @apply absolute left-2 bottom-2;
+            @apply absolute left-2 bottom-2 text-[14px];
           }
         }
       }
@@ -128,7 +128,7 @@
           @apply absolute bottom-0 left-0 xl:scale-100 lg:scale-x-75 md:scale-x-[60%];
           transform-origin: left;
           p {
-            @apply absolute left-2 bottom-2;
+            @apply absolute left-2 bottom-2 text-[14px];
           }
         }
       }
@@ -144,7 +144,7 @@
           z-index: 10;
         }
         .group-2 {
-          @apply flex w-full flex-col gap-4 items-end;
+          @apply flex w-full flex-col gap-6 items-end;
           z-index: 10;
           .content-1 {
             @apply xl:text-[48px] lg:text-[45px] md:text-[38px];

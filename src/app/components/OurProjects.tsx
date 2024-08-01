@@ -95,7 +95,7 @@ export default function OurProjects({ scroll }: any) {
             </div>
             <div className="group-3">
               <a className="btn-1">
-                Coming soon
+                COMING SOON
               </a>
             </div>
           </div>
