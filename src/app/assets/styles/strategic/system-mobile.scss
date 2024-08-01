@@ -40,6 +40,23 @@
       font-style: normal;
       font-weight: 500;
       line-height: 36px; /* 225% */
+      p, svg {
+        transition: transform 0.5s ease;
+      }
+      &:hover {
+        @apply bg-white text-black;
+        svg {
+          transform: translateX(125px);
+          path {
+            fill: black;
+          }
+        }
+
+        p {
+          @apply text-black;
+          transform: translateX(-25px);
+        }
+      }
     }
   }
 }
