@@ -20,6 +20,7 @@
           transform-origin: left bottom;
           p {
             @apply absolute left-2 bottom-2 text-[14px];
+            font-family: Play;
           }
         }
         .video-bunny {
@@ -139,6 +140,7 @@
           transform-origin: left bottom;
           p {
             @apply absolute left-2 bottom-2 text-[14px];
+            font-family: Play;
           }
         }
       }
