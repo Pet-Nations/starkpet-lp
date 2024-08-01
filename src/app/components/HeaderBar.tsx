@@ -23,6 +23,7 @@ export default function HeaderBar({ onClickNav }: any) {
 
   function clickNav(value: string) {
     onClickNav(value);
+    setOpen(false);
   }
 
   return (
