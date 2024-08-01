@@ -10,6 +10,7 @@ import triangle from "@/app/assets/images/our-projects/triangle.svg";
 import bgMobile from "@/app/assets/images/our-projects/starship-background.png";
 import bg from "@/app/assets/images/our-projects/bg.png";
 import videoBunny from "@/app/assets/videos/our-project/video.mp4";
+import videoSocial from "@/app/assets/videos/our-project/social-network.mp4";
 export default function OurProjects({ scroll }: any) {
   const projects = useRef(null);
   useEffect(() => {
@@ -107,7 +108,11 @@ export default function OurProjects({ scroll }: any) {
           </div>
           <div className="group-img">
             <div className="social-network">
-              <Image src={social_network} alt="starshipBunny"/>
+              <Image src={social_network} alt="social_network"/>
+              <video autoPlay loop muted playsInline preload="none">
+                <source src={videoSocial} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
             </div>
             <div className="triangle">
               <Image src={triangle} alt="triangle"/>
@@ -161,8 +166,15 @@ export default function OurProjects({ scroll }: any) {
           </div>
         </div>
         <div className="group-image-mobile">
-          <Image src={social_network} alt={"social_network"}/>
+          <Image className="social-img" src={social_network} alt={"social_network"}/>
+          <div className="video-social">
+            <video autoPlay loop muted playsInline preload="none">
+              <source src={videoSocial} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
           <Image src={triangle} alt={"triangle"}/>
+
         </div>
         <div className="content">
           <Image className="bg-mobile" src={bgMobile} alt={"bgMobile"}/>
@@ -179,7 +191,8 @@ export default function OurProjects({ scroll }: any) {
               <p>COMING SOON</p>
             </div>
             <div className="content-3">
-              All in one social playground for pet web3. Try to explore your creativity and join in the decentralized pet web3 ecosystem.             </div>
+              All in one social playground for pet web3. Try to explore your creativity and join in the decentralized pet web3 ecosystem.
+            </div>
           </div>
           <div className="group-3">
             <a className="btn-3">

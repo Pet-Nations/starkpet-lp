@@ -129,10 +129,13 @@
       .group-img {
         @apply xl:basis-[72%] lg:basis-[65%] md:basis-2/3 relative;
         .social-network {
-          @apply w-full h-full ;
+          @apply w-full h-full relative;
           clip-path: path("M24 0H950C963.255 0 974 10.7452 974 24V550C974 563.255 963.255 574 950 574L157.295 574C151.512 574 145.924 571.912 141.558 568.121L8.26358 452.366C3.01455 447.808 0 441.197 0 434.245V24C0 10.7452 10.7452 0 24 0Z");
           img {
-            @apply w-full h-full object-cover rounded-[24px];
+            @apply absolute top-0 left-0 w-full h-full object-cover rounded-[24px] z-20;
+          }
+          video {
+            @apply top-0 left-0 w-full h-full object-cover rounded-[24px] absolute z-10;
           }
         }
         .triangle {
@@ -227,7 +230,7 @@
   .our-projects-body-mobile {
     @apply md:hidden max-md:flex flex-col w-full gap-4;
     .group-image-mobile {
-      @apply w-full h-full relative;
+      @apply w-full h-[200px] relative;
       .video-bunny {
         @apply w-full h-[200px] rounded-[24px];
         clip-path: path("M24 0H880C893.255 0 904 10.7452 904 24V224C904 237.255 893.255 248 880 248L157.295 248C151.512 248 145.924 245.912 141.558 242.121L8.26358 126.366C3.01455 121.808 0 115.197 0 108.245V24C0 10.7452 10.7452 0 24 0Z");
@@ -235,8 +238,15 @@
           @apply w-full h-full object-cover rounded-[24px];
         }
       }
+      .video-social {
+        @apply top-0 left-0 absolute w-full h-[200px] rounded-[24px] z-[1];
+        clip-path: path("M24 0H880C893.255 0 904 10.7452 904 24V224C904 237.255 893.255 248 880 248L157.295 248C151.512 248 145.924 245.912 141.558 242.121L8.26358 126.366C3.01455 121.808 0 115.197 0 108.245V24C0 10.7452 10.7452 0 24 0Z");
+        video {
+          @apply w-full h-full object-cover rounded-[24px];
+        }
+      }
       img:first-child {
-        @apply w-full h-[200px] rounded-[24px];
+        @apply top-0 left-0 absolute w-full h-[200px] rounded-[24px] z-20;
         clip-path: path("M24 0H880C893.255 0 904 10.7452 904 24V224C904 237.255 893.255 248 880 248L157.295 248C151.512 248 145.924 245.912 141.558 242.121L8.26358 126.366C3.01455 121.808 0 115.197 0 108.245V24C0 10.7452 10.7452 0 24 0Z");
       }
       .starship-logo {
