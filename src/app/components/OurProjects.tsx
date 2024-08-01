@@ -171,10 +171,10 @@ export default function OurProjects({ scroll }: any) {
           </div>
           <div className="group-3">
             <a className="btn-3">
-              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">
-                <path d="M16.5946 9.66421L7.98803 18.2708L6.57382 16.8566L15.1804 8.25H7.59464V6.25H18.5946V17.25H16.5946V9.66421Z" fill="white"/>
-              </svg>
-              <p>Go to dashboard</p>
+              {/*<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25" fill="none">*/}
+              {/*  <path d="M16.5946 9.66421L7.98803 18.2708L6.57382 16.8566L15.1804 8.25H7.59464V6.25H18.5946V17.25H16.5946V9.66421Z" fill="white"/>*/}
+              {/*</svg>*/}
+              <p>COMING SOON</p>
             </a>
           </div>
         </div>

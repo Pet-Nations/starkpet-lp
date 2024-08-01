@@ -341,14 +341,8 @@
           font-weight: 500;
           line-height: 36px;
           &:hover {
-            svg {
-              @apply translate-x-140;
-              path {
-                fill: black;
-              }
-            }
             p {
-              @apply text-black -translate-x-25;
+              @apply text-black translate-x-0;
             }
           }
         }
