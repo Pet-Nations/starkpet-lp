@@ -81,7 +81,7 @@
           @apply absolute top-0 object-top object-contain w-full h-full;
         }
         .card-item {
-          @apply flex flex-col justify-end h-full gap-1 items-start;
+          @apply flex flex-col justify-end h-full w-full gap-1 items-start;
           .card-title {
             color: rgba(248, 248, 248, 0.95);
             font-family: Play, sans-serif;

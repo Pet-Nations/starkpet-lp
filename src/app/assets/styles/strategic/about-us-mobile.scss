@@ -4,7 +4,7 @@
   box-shadow: 2px 4px 16px 0px rgba(248, 248, 248, 0.06) inset;
   backdrop-filter: blur(50px);
   img {
-    @apply absolute top-0 object-top object-contain w-full h-full;
+    @apply absolute top-0 object-top object-contain w-full h-[70%];
   }
   .about-content {
     @apply flex flex-col justify-end h-full gap-1 items-start;
