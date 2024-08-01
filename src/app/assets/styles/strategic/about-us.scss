@@ -1,0 +1,75 @@
+.about-us {
+  @apply flex flex-col justify-center items-center gap-4 rounded-[24px] lg:w-[855px] md:w-[60%] max-md:hidden relative;
+  border: none;
+  background: rgba(40, 40, 40, 0.70);
+  box-shadow: 2px 4px 16px 0px rgba(248, 248, 248, 0.06) inset;
+  backdrop-filter: blur(50px);
+  padding: 16px 16px 32px 16px;
+
+  .about-us-img {
+    @apply object-top w-full object-cover absolute top-0 opacity-100 z-30;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .about-us-img-active {
+    @apply object-top w-full object-cover absolute top-0 opacity-0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  .about-content {
+    @apply flex flex-col gap-6 w-full h-full justify-end items-start xl:px-4 lg:px-0;
+    .about-description {
+      @apply flex flex-col gap-1 xl:text-[24px] md:text-[22px];
+      color: rgba(248, 248, 248, 0.95);
+      font-family: Play, sans-serif;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+      p {
+        @apply xl:text-[16px] md:text-[14px] ;
+        color: rgba(248, 248, 248, 0.7);
+      }
+
+    }
+    .about-follow {
+      @apply flex px-6 py-[6px] justify-center items-center gap-2 cursor-pointer;
+      border-radius: 56px;
+      border: 0.5px solid #FFF;
+
+      p, svg {
+        transition: transform 0.5s ease;
+      }
+
+      p {
+        @apply text-white text-[16px] font-[500] leading-9;
+        font-family: "Plus Jakarta Sans", sans-serif;
+
+      }
+
+      &:hover {
+        @apply bg-white;
+        svg {
+          transform: translateX(80px);
+          path {
+            fill: black;
+          }
+        }
+
+        p {
+          @apply text-black;
+          transform: translateX(-20px);
+        }
+      }
+    }
+  }
+
+  &:hover {
+    .about-us-img {
+      @apply opacity-0;
+    }
+
+    .about-us-img-active {
+      @apply opacity-100;
+    }
+  }
+}

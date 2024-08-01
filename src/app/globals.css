@@ -33,3 +33,52 @@ body {
   overflow: hidden; /* Ẩn phần văn bản vượt quá khối chứa */
   text-overflow: ellipsis;
 }
+
+@font-face {
+  font-family: Play;
+  src: url("/Play-Regular.ttf");
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url("/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: Poppins-Extrabold;
+  src: url("/Poppins-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: Anton;
+  src: url("/Anton-Regular.ttf");
+}
+
+@font-face {
+  font-family: PlusJakarta;
+  src: url("/PlusJakartaSans-VariableFont.ttf");
+}
+
+.container-stark {
+  position: relative;
+
+  > div:not(.header-bar) {
+    z-index: 1;
+  }
+
+  main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  background-image: url("./assets/images/background.png");
+  opacity: 0.15;
+}

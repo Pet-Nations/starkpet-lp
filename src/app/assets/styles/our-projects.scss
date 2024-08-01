@@ -1,0 +1,367 @@
+.our-projects {
+  @apply flex w-[95%] flex-col items-center max-w-[1280px] mb-10;
+  .our-projects-title {
+    @apply w-full text-[#242424]
+    2xl:text-[240px] xl:text-[225px] lg:text-[180px] md:text-[135px] max-md:text-[93px]
+    font-normal uppercase text-center;
+    font-family: Anton;
+  }
+  .our-projects-body {
+    @apply flex flex-col w-full max-md:hidden;
+    .group-content-1 {
+      @apply flex max-md:flex-col max-md:h-full gap-2 w-full h-[497px];
+      .group-img {
+        @apply xl:basis-[72%] lg:basis-[65%] md:basis-2/3 relative h-full;
+        .starkship-logo {
+          @apply absolute top-5 z-40 right-5;
+        }
+        .triangle {
+          @apply absolute bottom-0 left-0 xl:scale-100;
+          transform-origin: left;
+          p {
+            @apply absolute left-2 bottom-2 text-[14px];
+          }
+        }
+        .video-bunny {
+          @apply w-full h-full;
+          clip-path: path("M24 0H880C893.255 0 904 10.7452 904 24V472C904 485.255 893.255 496 880 496L157.295 496C151.512 496 145.924 493.912 141.558 490.121L8.26358 374.366C3.01455 369.808 0 363.197 0 356.245V24C0 10.7452 10.7452 0 24 0Z");
+          video {
+            @apply w-full h-full object-cover rounded-[24px];
+          }
+        }
+      }
+      .content {
+        @apply flex flex-col gap-10 xl:basis-[28%] lg:basis-[35%] md:basis-1/3 lg:px-5 lg:py-6 md:p-2 rounded-[24px] w-full relative;
+        .group-1 {
+          @apply flex justify-between h-[36px] items-center lg:text-[18px] md:text-[14px];
+          color: #dcdcdc;
+          font-family: Play;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 36px;
+          z-index: 10;
+        }
+        .group-2 {
+          @apply flex w-full flex-col gap-4 items-end;
+          z-index: 10;
+          .content-1 {
+            @apply xl:text-[48px] lg:text-[45px] md:text-[38px];
+            color: #fff;
+            text-align: right;
+            font-family: Anton;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-transform: uppercase;
+          }
+          .content-2 {
+            @apply flex flex-col items-end;
+            span {
+              @apply lg:text-[16px] md:text-[14px];
+              color: #fff;
+              text-align: right;
+              font-family: Play;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 130%; /* 20.8px */
+            }
+          }
+          .content-3 {
+            @apply w-[98%] items-end text-right lg:text-[16px] md:text-[14px];
+            color: #dcdcdc;
+            text-align: right;
+            font-family: Play;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+        .group-3 {
+          @apply flex flex-col gap-2 items-end z-20 lg:right-[20px] lg:bottom-[24px] md:right-2 md:bottom-10;
+          a {
+            @apply lg:text-[16px] md:text-[14px] lg:w-[206px] md:w-[145px] lg:py-1.5 lg:px-6 md:px-2 md:py-1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 4px;
+            border-radius: 56px;
+            border: 0.5px solid #fff;
+            cursor: pointer;
+            color: #fff;
+            font-family: "Plus Jakarta Sans";
+            font-style: normal;
+            font-weight: 500;
+            line-height: 36px; /* 225% */
+            p,
+            svg {
+              transition: transform 0.5s ease;
+            }
+          }
+          a:hover {
+            @apply bg-white;
+            svg {
+              @apply lg:translate-x-100 md:translate-x-90;
+              path {
+                fill: black;
+              }
+            }
+
+            p {
+              @apply text-black lg:-translate-x-25 md:-translate-x-20;
+            }
+          }
+          a:nth-child(2):hover {
+            svg {
+              @apply lg:translate-x-115 md:translate-x-100;
+            }
+
+            p {
+              @apply text-black lg:-translate-x-25 md:-translate-x-20;
+            }
+          }
+        }
+      }
+    }
+    .group-content-2 {
+      @apply flex gap-2 h-[497px] w-full mt-1;
+      .group-img {
+        @apply xl:basis-[72%] lg:basis-[65%] md:basis-2/3 relative;
+        .social-network {
+          @apply w-full h-full ;
+          clip-path: path("M24 0H880C893.255 0 904 10.7452 904 24V472C904 485.255 893.255 496 880 496L157.295 496C151.512 496 145.924 493.912 141.558 490.121L8.26358 374.366C3.01455 369.808 0 363.197 0 356.245V24C0 10.7452 10.7452 0 24 0Z");
+          img {
+            @apply w-full h-full object-cover rounded-[24px];
+          }
+        }
+        .triangle {
+          @apply absolute bottom-0 left-0;
+          p {
+            @apply absolute left-2 bottom-2 text-[14px];
+          }
+        }
+      }
+      .content {
+        @apply flex flex-col gap-10 xl:basis-[28%] lg:basis-[35%] md:basis-1/3 lg:px-5 lg:py-6 md:p-2 rounded-[24px] w-full relative;
+        .group-1 {
+          @apply flex justify-between h-[36px] items-center lg:text-[18px] md:text-[14px];
+          color: #dcdcdc;
+          font-family: Play;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 36px;
+          z-index: 10;
+        }
+        .group-2 {
+          @apply flex w-full flex-col gap-6 items-end;
+          z-index: 10;
+          .content-1 {
+            @apply xl:text-[48px] lg:text-[45px] md:text-[38px];
+            color: #fff;
+            text-align: right;
+            font-family: Anton;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-transform: uppercase;
+          }
+          .content-2 {
+            @apply flex flex-col items-end;
+            span:nth-child(1) {
+              @apply lg:text-[16px] md:text-[14px];
+              color: #fff;
+              text-align: right;
+              font-family: Play;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 130%; /* 20.8px */
+            }
+            span:nth-child(2) {
+              color: #fff;
+              text-align: right;
+              font-family: Anton;
+              font-size: 34px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+              text-transform: uppercase;
+            }
+          }
+          .content-3 {
+            @apply w-[98%] items-end text-right lg:text-[16px] md:text-[14px];
+            color: #dcdcdc;
+            text-align: right;
+            font-family: Play;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+        .group-3 {
+          @apply flex flex-col gap-2 w-full items-end lg:right-[20px] lg:bottom-[94px] md:right-2 md:bottom-20 z-10;
+          a {
+            @apply lg:text-[16px] md:text-[14px] lg:w-[206px] md:w-[145px] lg:py-1.5 lg:px-6 md:px-2 md:py-1;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            gap: 4px;
+            border-radius: 56px;
+            border: 0.5px solid #fff;
+            cursor: pointer;
+            color: #fff;
+            font-family: "Plus Jakarta Sans";
+            font-style: normal;
+            font-weight: 500;
+            line-height: 36px; /* 225% */
+          }
+          a:hover {
+            @apply bg-white text-black;
+          }
+        }
+      }
+    }
+  }
+  .our-projects-body-mobile {
+    @apply md:hidden max-md:flex flex-col w-full gap-4;
+    .group-image-mobile {
+      @apply w-full relative;
+      img:first-child {
+        @apply w-full;
+      }
+      .starship-logo {
+        @apply absolute top-2 right-2 w-[89px] h-[21px];
+      }
+      img:last-child {
+        @apply absolute bottom-0 left-0 h-[10] w-[96px] sm:scale-90 max-md:scale-50;
+        transform-origin: left bottom;
+      }
+    }
+    .content {
+      @apply flex flex-col relative gap-4;
+      border-radius: 35px;
+      overflow: hidden;
+      .bg-mobile {
+        @apply w-full h-full absolute top-0;
+      }
+      .group-1 {
+        @apply w-full flex justify-between h-[36px] text-[18px] z-20 px-5 mt-6;
+        color: #dcdcdc;
+        font-family: Play;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 36px;
+      }
+      .group-2 {
+        @apply flex flex-col w-full items-end z-20 px-5 gap-4;
+        .content-1 {
+          color: #fff;
+          text-align: right;
+          font-family: Anton;
+          font-size: 48px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 50px; /* 104.167% */
+          text-transform: uppercase;
+        }
+        .content-2 {
+          @apply flex flex-col items-end;
+          span {
+            @apply lg:text-[16px] md:text-[14px];
+            color: #fff;
+            text-align: right;
+            font-family: Play;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 130%; /* 20.8px */
+          }
+          p {
+            color: #fff;
+            text-align: right;
+            font-family: Anton;
+            font-size: 34px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            text-transform: uppercase;
+          }
+        }
+        .content-3 {
+          @apply w-[98%] items-end text-right lg:text-[16px] md:text-[14px];
+          color: #dcdcdc;
+          text-align: right;
+          font-family: Play;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+      .group-3 {
+        @apply flex flex-col z-20 px-5 py-6 w-full items-end gap-2;
+        padding-top: 0.8rem;
+        a {
+          display: flex;
+          width: 200px;
+          padding: 6px 24px;
+          justify-content: center;
+          align-items: center;
+          gap: 4px;
+          border-radius: 56px;
+          border: 0.5px solid #fff;
+          color: #fff;
+          font-family: "Plus Jakarta Sans";
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 36px;
+          p,
+          svg {
+            transition: transform 0.5s ease;
+          }
+        }
+        a:hover {
+          @apply bg-white;
+          svg {
+            @apply translate-x-100;
+            path {
+              fill: black;
+            }
+          }
+          p {
+            @apply text-black -translate-x-25;
+          }
+          &:nth-child(2) {
+            svg {
+              @apply translate-x-115;
+              path {
+                fill: black;
+              }
+            }
+          }
+        }
+        .btn-3 {
+          display: flex;
+          width: 210px;
+          padding: 6px 24px;
+          justify-content: center;
+          align-items: center;
+          gap: 4px;
+          border-radius: 56px;
+          border: 0.5px solid #fff;
+          color: #fff;
+          font-family: "Plus Jakarta Sans";
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 36px;
+          &:hover {
+            p {
+              @apply text-black translate-x-0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.background-our {
+  @apply absolute w-full h-full left-0 top-0;
+}

@@ -14,8 +14,20 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       fontFamily: {
-        'inter': ['Inter']
-      }
+        'inter': ['Inter'],
+        'play' : ['Play'],
+        'plus-jakarta-sans': ['Plus Jakarta Sans']
+      },
+      translate: {
+        '140': '140px',
+        '115': '115px',
+        '110': '110px',
+        '100': '100px',
+        '90': '90px',
+        '25': '25px',
+        '20': '20px',
+        '10': '10px',
+      },
     },
   },
   plugins: [],
