@@ -30,7 +30,7 @@
         @apply flex flex-col gap-10 xl:basis-[28%] lg:basis-[35%] md:basis-1/3 lg:px-5 lg:py-6 md:p-2 rounded-[24px] w-full relative;
         .group-1 {
           @apply flex justify-between h-[36px] items-center lg:text-[18px] md:text-[14px];
-          color: #DCDCDC;
+          color: #dcdcdc;
           font-family: Play;
           font-style: normal;
           font-weight: 400;
@@ -42,7 +42,7 @@
           z-index: 10;
           .content-1 {
             @apply xl:text-[48px] lg:text-[45px] md:text-[38px];
-            color: #FFF;
+            color: #fff;
             text-align: right;
             font-family: Anton;
             font-style: normal;
@@ -54,7 +54,7 @@
             @apply flex flex-col items-end;
             span {
               @apply lg:text-[16px] md:text-[14px];
-              color: #FFF;
+              color: #fff;
               text-align: right;
               font-family: Play;
               font-style: normal;
@@ -64,7 +64,7 @@
           }
           .content-3 {
             @apply w-[98%] items-end text-right lg:text-[16px] md:text-[14px];
-            color: #DCDCDC;
+            color: #dcdcdc;
             text-align: right;
             font-family: Play;
             font-style: normal;
@@ -81,21 +81,22 @@
             align-items: center;
             gap: 4px;
             border-radius: 56px;
-            border: 0.5px solid #FFF;
+            border: 0.5px solid #fff;
             cursor: pointer;
-            color: #FFF;
+            color: #fff;
             font-family: "Plus Jakarta Sans";
             font-style: normal;
             font-weight: 500;
             line-height: 36px; /* 225% */
-            p, svg {
+            p,
+            svg {
               transition: transform 0.5s ease;
             }
           }
           a:hover {
             @apply bg-white;
             svg {
-             @apply lg:translate-x-100 md:translate-x-90;
+              @apply lg:translate-x-100 md:translate-x-90;
               path {
                 fill: black;
               }
@@ -136,7 +137,7 @@
         @apply flex flex-col gap-10 xl:basis-[28%] lg:basis-[35%] md:basis-1/3 lg:px-5 lg:py-6 md:p-2 rounded-[24px] w-full relative;
         .group-1 {
           @apply flex justify-between h-[36px] items-center lg:text-[18px] md:text-[14px];
-          color: #DCDCDC;
+          color: #dcdcdc;
           font-family: Play;
           font-style: normal;
           font-weight: 400;
@@ -148,7 +149,7 @@
           z-index: 10;
           .content-1 {
             @apply xl:text-[48px] lg:text-[45px] md:text-[38px];
-            color: #FFF;
+            color: #fff;
             text-align: right;
             font-family: Anton;
             font-style: normal;
@@ -160,7 +161,7 @@
             @apply flex flex-col items-end;
             span:nth-child(1) {
               @apply lg:text-[16px] md:text-[14px];
-              color: #FFF;
+              color: #fff;
               text-align: right;
               font-family: Play;
               font-style: normal;
@@ -168,7 +169,7 @@
               line-height: 130%; /* 20.8px */
             }
             span:nth-child(2) {
-              color: #FFF;
+              color: #fff;
               text-align: right;
               font-family: Anton;
               font-size: 34px;
@@ -180,7 +181,7 @@
           }
           .content-3 {
             @apply w-[98%] items-end text-right lg:text-[16px] md:text-[14px];
-            color: #DCDCDC;
+            color: #dcdcdc;
             text-align: right;
             font-family: Play;
             font-style: normal;
@@ -197,9 +198,9 @@
             align-items: end;
             gap: 4px;
             border-radius: 56px;
-            border: 0.5px solid #FFF;
+            border: 0.5px solid #fff;
             cursor: pointer;
-            color: #FFF;
+            color: #fff;
             font-family: "Plus Jakarta Sans";
             font-style: normal;
             font-weight: 500;
@@ -217,7 +218,7 @@
     .group-image-mobile {
       @apply w-full relative;
       img:first-child {
-       @apply w-full;
+        @apply w-full;
       }
       .starship-logo {
         @apply absolute top-2 right-2 w-[89px] h-[21px];
@@ -229,12 +230,14 @@
     }
     .content {
       @apply flex flex-col relative gap-4;
+      border-radius: 35px;
+      overflow: hidden;
       .bg-mobile {
         @apply w-full h-full absolute top-0;
       }
       .group-1 {
         @apply w-full flex justify-between h-[36px] text-[18px] z-20 px-5 mt-6;
-        color: #DCDCDC;
+        color: #dcdcdc;
         font-family: Play;
         font-style: normal;
         font-weight: 400;
@@ -243,7 +246,7 @@
       .group-2 {
         @apply flex flex-col w-full items-end z-20 px-5 gap-4;
         .content-1 {
-          color: #FFF;
+          color: #fff;
           text-align: right;
           font-family: Anton;
           font-size: 48px;
@@ -256,7 +259,7 @@
           @apply flex flex-col items-end;
           span {
             @apply lg:text-[16px] md:text-[14px];
-            color: #FFF;
+            color: #fff;
             text-align: right;
             font-family: Play;
             font-style: normal;
@@ -264,7 +267,7 @@
             line-height: 130%; /* 20.8px */
           }
           p {
-            color: #FFF;
+            color: #fff;
             text-align: right;
             font-family: Anton;
             font-size: 34px;
@@ -276,7 +279,7 @@
         }
         .content-3 {
           @apply w-[98%] items-end text-right lg:text-[16px] md:text-[14px];
-          color: #DCDCDC;
+          color: #dcdcdc;
           text-align: right;
           font-family: Play;
           font-style: normal;
@@ -286,6 +289,7 @@
       }
       .group-3 {
         @apply flex flex-col z-20 px-5 py-6 w-full items-end gap-2;
+        padding-top: 0.8rem;
         a {
           display: flex;
           width: 200px;
@@ -294,21 +298,22 @@
           align-items: center;
           gap: 4px;
           border-radius: 56px;
-          border: 0.5px solid #FFF;
-          color: #FFF;
+          border: 0.5px solid #fff;
+          color: #fff;
           font-family: "Plus Jakarta Sans";
           font-size: 16px;
           font-style: normal;
           font-weight: 500;
           line-height: 36px;
-          p, svg {
+          p,
+          svg {
             transition: transform 0.5s ease;
           }
         }
         a:hover {
           @apply bg-white;
           svg {
-            @apply translate-x-100 ;
+            @apply translate-x-100;
             path {
               fill: black;
             }
@@ -333,8 +338,8 @@
           align-items: center;
           gap: 4px;
           border-radius: 56px;
-          border: 0.5px solid #FFF;
-          color: #FFF;
+          border: 0.5px solid #fff;
+          color: #fff;
           font-family: "Plus Jakarta Sans";
           font-size: 16px;
           font-style: normal;
