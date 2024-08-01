@@ -9,7 +9,7 @@
   .our-projects-body {
     @apply flex flex-col w-full max-md:hidden;
     .group-content-1 {
-      @apply flex max-md:flex-col max-md:h-full gap-2 h-[497px] w-full;
+      @apply flex max-md:flex-col max-md:h-full gap-2 w-full;
       .group-img {
         @apply xl:basis-[72%] lg:basis-[65%] md:basis-2/3 relative;
         img:first-child {
@@ -19,7 +19,7 @@
           @apply absolute top-5 z-40 right-5;
         }
         .triangle {
-          @apply absolute bottom-0 left-0 xl:scale-100 lg:scale-x-75 md:scale-x-50;
+          @apply absolute bottom-0 left-0 xl:scale-100 lg:scale-x-75 md:scale-x-[60%];
           transform-origin: left;
           p {
             @apply absolute left-2 bottom-2;
@@ -125,7 +125,7 @@
           @apply h-full;
         }
         .triangle {
-          @apply absolute bottom-0 left-0 xl:scale-100 lg:scale-x-75 md:scale-x-50;
+          @apply absolute bottom-0 left-0 xl:scale-100 lg:scale-x-75 md:scale-x-[60%];
           transform-origin: left;
           p {
             @apply absolute left-2 bottom-2;
