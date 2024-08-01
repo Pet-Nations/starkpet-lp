@@ -9,6 +9,7 @@ import social_network from "@/app/assets/images/our-projects/social.png";
 import triangle from "@/app/assets/images/our-projects/triangle.svg";
 import bgMobile from "@/app/assets/images/our-projects/starship-background.png";
 import bg from "@/app/assets/images/our-projects/bg.png";
+import videoBunny from "@/app/assets/videos/our-project/video.mp4";
 export default function OurProjects({ scroll }: any) {
   const projects = useRef(null);
   useEffect(() => {
@@ -32,7 +33,12 @@ export default function OurProjects({ scroll }: any) {
       <div className="our-projects-body">
         <div className="group-content-1">
           <div className="group-img">
-            <Image src={starshipBunny} alt="starshipBunny"/>
+            <div className="video-bunny">
+              <video autoPlay loop muted playsInline preload="none">
+                <source src={videoBunny} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
             <Image className="starkship-logo" src={starship} alt="starshipB"/>
 
             <div className="triangle">
@@ -100,7 +106,9 @@ export default function OurProjects({ scroll }: any) {
             </div>
           </div>
           <div className="group-img">
-            <Image src={social_network} alt="starshipBunny"/>
+            <div className="social-network">
+              <Image src={social_network} alt="starshipBunny"/>
+            </div>
             <div className="triangle">
               <Image src={triangle} alt="triangle"/>
               <p>SOON</p>
