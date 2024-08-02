@@ -1,48 +1,26 @@
 import Image from "next/image";
-import { useState, useEffect } from "react";
-
 import "@/app/assets/styles/intro.scss";
-import intro from "@/app/assets/images/intro/intro-img.svg";
+import intro from "@/app/assets/images/intro/img.png";
 import intro_mobile from "@/app/assets/images/intro/intro-img-mobile.png";
 
 export default function Intro() {
-  const [screenWidth, setScreenWidth] = useState(0);
-  useEffect(() => {
-    const handleResize = () => {
-      setScreenWidth(window.innerWidth);
-    };
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
   return (
     <div className="intro">
-      {screenWidth <= 614 ? (
-        <>
-          <div>
-            <div>Pet nations labs</div>
-            <div>Pet nations labs</div>
-            <div>Pet nations labs</div>
-            <div>Pet nations labs</div>
-            <div>Pet nations labs</div>
-            <div>Pet nations labs</div>
-            <div>Pet nations labs</div>
+      <div className="intro-body">
+          <div className="content-text">
+              <span>PET NATIONS LABS</span>
+              <span>PET NATIONS LABS</span>
+              <span>PET NATIONS LABS</span>
+              <span>PET NATIONS LABS</span>
+              <span>PET NATIONS LABS</span>
+              <span>PET NATIONS LABS</span>
+              <span>PET NATIONS LABS</span>
           </div>
-          <Image src={intro_mobile} width={350} height={498} alt="intro" />
-        </>
-      ) : (
-        <>
-          <div>
-            <div>Pet nations labs</div>
-            <div>Pet nations labs</div>
-            <div>Pet nations labs</div>
+          <div className="group-img">
+              <Image className="intro-img" src={intro} alt={"intro"}/>
+              <Image className="intro-img-mobile" src={intro_mobile} alt={"intro"}/>
           </div>
-          <Image src={intro} width={709} height={655} alt="intro" />
-        </>
-      )}
+      </div>
     </div>
   );
 }
