@@ -1,6 +1,6 @@
 import Image from "next/image";
 import "@/app/assets/styles/intro.scss";
-import intro from "@/app/assets/images/intro/img.png";
+import intro from "@/app/assets/images/intro/intro-img.png";
 import intro_mobile from "@/app/assets/images/intro/intro-img-mobile.png";
 
 export default function Intro() {
